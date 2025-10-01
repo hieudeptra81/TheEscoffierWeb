@@ -1,0 +1,295 @@
+﻿<!doctype html>
+<html lang="vi">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Chuyện Nhà – Hậu trường tách cappuccino</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/blog1.css">
+</head>
+<body class="text-brown">
+    <!-- HEADER -->
+    <header class="bg-white shadow-sm">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <a class="navbar-brand fw-bold text-brown" href="index.html">THE ESCOFFIER</a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav me-auto">
+                        <li class="nav-item dropdown position-static">
+                            <a class="nav-link dropdown-toggle d-flex align-items-center" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Menu
+                            </a>
+                            <ul class="dropdown-menu mt-0 p-3">
+                                <li><a class="dropdown-item" href="product.html">Tất Cả</a></li>
+
+                                <!-- Cà Phê -->
+                                <li class="dropdown-submenu position-relative w-64">
+                                    <a class="dropdown-item dropdown-toggle" href="product/Caphe.html">Cà Phê</a>
+                                </li>
+
+                                <!-- Matcha -->
+                                <li class="dropdown-submenu position-relative">
+                                    <a class="dropdown-item dropdown-toggle" href="product/Matcha.html">Matcha</a>
+                                </li>
+
+                                <!-- Chocolate -->
+                                <li class="dropdown-submenu position-relative">
+                                    <a class="dropdown-item dropdown-toggle" href="product/Chocolate.html">Chocolate</a>
+                                </li>
+
+                                <li><a class="dropdown-item" href="product/ThucUongDaXay.html">Thức uống đá xay</a></li>
+                                <li><a class="dropdown-item" href="product/cake.html">Bánh & Snack</a></li>
+                                <li><a class="dropdown-item" href="product/ThuongThucTaiNha.html">Thưởng Thức Tại Nhà</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Chuyện Nhà
+                            </a>
+                            <ul class="dropdown-menu p-3" style="min-width: 300px;">
+                                <!-- Trang chủ -->
+                                <li class="mb-2">
+                                    <h6 class="text-brown fw-bold mb-2">Coffeeholic</h6>
+                                    <div class="d-flex flex-wrap gap-1">
+                                        <a href="trangchuyennha.html" class="badge bg-light text-brown text-decoration-none border">#Trangchu</a>
+                                    </div>
+                                </li>
+                                <!-- Coffeeholic -->
+                                <li class="mb-2">
+                                    <h6 class="text-brown fw-bold mb-2">Coffeeholic</h6>
+                                    <div class="d-flex flex-wrap gap-1">
+                                        <a href="blog1.html" class="badge bg-light text-brown text-decoration-none border">#chuyencaphe</a>
+                                        <a href="blog2.html" class="badge bg-light text-brown text-decoration-none border">#phacaphe</a>
+                                    </div>
+                                </li>
+
+                                <li><hr class="my-2"></li>
+                                <!-- Teaholic -->
+                                <li class="mb-2">
+                                    <h6 class="text-brown fw-bold mb-2">Teaholic</h6>
+                                    <div class="d-flex flex-wrap gap-1">
+                                        <a href="blog3.html" class="badge bg-light text-brown text-decoration-none border">#cauchuyenvetra</a>
+                                        <a href="blog4.html" class="badge bg-light text-brown text-decoration-none border">#phatra</a>
+                                    </div>
+                                </li>
+
+                                <li><hr class="my-2"></li>
+
+                                <!-- Blog -->
+                                <li class="mb-2">
+                                    <h6 class="text-brown fw-bold mb-2">Blog</h6>
+                                    <div class="d-flex flex-wrap gap-1">
+                                        <a href="blog1.html" class="badge bg-light text-brown text-decoration-none border">#blog1</a>
+                                        <a href="blog2.html" class="badge bg-light text-brown text-decoration-none border">#blog2</a>
+                                        <a href="blog3.html" class="badge bg-light text-brown text-decoration-none border">#blog3</a>
+                                        <a href="blog4.html" class="badge bg-light text-brown text-decoration-none border">#blog4</a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="tuyendung.html">Tuyển dụng</a>
+                        </li>
+                    </ul>
+
+                    <div class="d-flex align-items-center">
+                        <button class="btn position-relative me-3 border-0" onclick="openCartModal()">
+                            <i class="bi bi-cart3 fs-4 text-brown"></i>
+                            <span id="cart-count" class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">0</span>
+                        </button>
+
+                        <a href="DangNhap.html" class="text-brown" title="Đăng nhập / Đăng ký">
+                            <i class="bi bi-person-circle fs-4"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- CONTENT -->
+    <main class="main-wrap">
+        <article class="post-wrap">
+            <div class="post-hero">
+                <img src="images/hinhanhblog2.jpg" alt="Barista đang art latte">
+            </div>
+
+            <div class="post-meta">
+                <span class="tag">Behind the Bar</span>
+                <span class="dot-sep">·</span>
+                <time datetime="2025-09-12">12/09/2025</time>
+            </div>
+
+            <h1 class="post-title">Hậu trường tách cappuccino: bí quyết foam mịn và ấm áp</h1>
+
+            <div class="post-content">
+                <p>Đằng sau một tách cappuccino đẹp đôi khi là cả một điệu nhạc ngắn của hơi nước, tiếng kim loại vang nhẹ, và nhịp tay đã thuộc nằm lòng. Mỗi buổi sáng tại The Escoffier, các barista của chúng tôi bắt đầu ngày mới bằng việc làm nóng máy espresso và chuẩn bị sữa tươi - khởi nguồn cho những tách cappuccino hoàn hảo.</p>
+
+                <p>Bí quyết đầu tiên nằm ở nhiệt độ sữa. Sữa cần được hấp ở nhiệt độ lý tưởng từ 60-65°C. Ở nhiệt độ này, đường lactose trong sữa được caramel hóa vừa phải, tạo độ ngọt tự nhiên mà không làm mất đi protein cần thiết để tạo foam. Khi nhiệt kế digital trên máy xông hơi hiện lên con số 62°C, đó là thời điểm vàng để ngừng lại.</p>
+
+                <h3>Nghệ thuật tạo foam</h3>
+                <p>Foam (bọt sữa) là linh hồn của cappuccino. Một foam tốt phải có kết cấu mịn như nhung, không có bong bóng khí lớn. Kỹ thuật "stretching" - kéo căng sữa - được thực hiện trong những giây đầu tiên khi van hơi mở. Âm thanh "xì xì" nhẹ là dấu hiệu không khí đang được đưa vào sữa một cách hoàn hảo.</p>
+
+                <p>Sau đó, barista chuyển sang giai đoạn "texturing" - tạo kết cấu. Bồn sữa được xoay nhẹ tạo thành xoáy nước nhỏ, giúp phân bố đều bong bóng khí siêu nhỏ. Chính những bong bóng này tạo nên độ mịn đặc trưng cho foam.</p>
+
+                <div class="coffee-tips">
+                    <h4>Mẹo nhỏ cho foam hoàn hảo:</h4>
+                    <ul>
+                        <li><strong>Sữa tươi thanh trùng nguyên chất</strong> - hàm lượng chất béo 3.5-4% lý tưởng nhất</li>
+                        <li><strong>Nhiệt độ phòng</strong> - sữa nên được bảo quản ở 4°C trước khi sử dụng</li>
+                        <li><strong>Góc nghiêng 45 độ</strong> - góc cầm bình sữa chuẩn khi xông hơi</li>
+                        <li><strong>Vệ sinh van hơi</strong> - luôn lau sạch van hơi sau mỗi lần sử dụng</li>
+                    </ul>
+                </div>
+
+                <h3>Tỷ lệ vàng cho cappuccino</h3>
+                <p>Theo tiêu chuẩn của The Escoffier, một cappuccino hoàn hảo có tỷ lệ 1:1:1 - 1 phần espresso, 1 phần sữa nóng, và 1 phần foam. Tuy nhiên, không phải là sự chia đều cứng nhắc, mà là sự hài hòa giữa ba yếu tố này.</p>
+
+                <p>Espresso phải có lớp crema dày, màu nâu hạt dẻ, được chiết xuất trong 25-30 giây. Lớp crema này không chỉ mang hương vị mà còn giúp giữ foam không bị chìm ngay lập tức.</p>
+
+                <h3>Latte art - chữ ký của barista</h3>
+                <p>Khi foam được rót vào espresso, đó là lúc nghệ thuật bắt đầu. Từ những trái tim đơn giản đến những con thiên nga phức tạp, mỗi hình vẽ là một câu chuyện. Nhưng quan trọng hơn cả vẻ đẹp bên ngoài, latte art chứng tỏ foam có độ sánh và nhiệt độ hoàn hảo.</p>
+
+                <p>"Một foam tốt sẽ tự nói lên điều đó thông qua latte art," - Barista Trần Minh Anh của chúng tôi chia sẻ. "Khi foam đủ mịn, nó sẽ trôi chảy như sơn, cho phép bạn vẽ nên những đường nét tinh tế."</p>
+
+                <div class="highlight-box">
+                    <p><strong>"Mỗi tách cappuccino không chỉ là thức uống, mà là tác phẩm của sự kiên nhẫn và đam mê. Từng giọt sữa, từng lớp foam đều mang theo câu chuyện của người làm ra nó."</strong></p>
+                </div>
+
+                <h3>Thưởng thức đúng cách</h3>
+                <p>Một tách cappuccino ngon cần được thưởng thức ngay khi phục vụ. Không nên khuấy đều mà hãy uống trực tiếp để cảm nhận sự phân tầng hương vị: vị đắng nhẹ của espresso ở dưới, vị ngọt dịu của sữa ở giữa, và lớp foam bồng bềnh trên cùng.</p>
+
+                <p>Nhiệt độ lý tưởng để thưởng thức là khi tách còn ấm nhưng không quá nóng - khoảng 55-60°C. Ở nhiệt độ này, hương vị được biểu hiện trọn vẹn nhất.</p>
+
+                <h3>Kết nối cộng đồng</h3>
+                <p>Tại The Escoffier, chúng tôi thường xuyên tổ chức các workshop "Behind the Bar" nơi khách hàng có thể học cách pha chế cappuccino cơ bản. Những buổi học này không chỉ chia sẻ kỹ thuật mà còn kết nối mọi người thông qua tình yêu cà phê.</p>
+
+                <p>Mỗi tách cappuccino được phục vụ không chỉ mang theo hương vị mà còn chứa đựng tâm huyết và câu chuyện của người tạo ra nó. Đó là lý do tại sao chúng tôi gọi đây là "hậu trường" - nơi mà sự tỉ mỉ và đam mê được thể hiện qua từng chi tiết nhỏ nhất.</p>
+            </div>
+
+            <a class="backlink" href="trangchuyennha.html">
+                <i class="bi bi-arrow-left me-2"></i>Quay lại Chuyện Nhà
+            </a>
+
+            <!-- Điều hướng blog -->
+            <div class="blog-nav">
+                <a href="blog1.html" class="nav-prev">
+                    <i class="bi bi-chevron-left me-1"></i>Trang trước
+                </a>
+                <span class="nav-current">Blog 2</span>
+                <a href="blog3.html" class="nav-next">
+                    Trang kế tiếp<i class="bi bi-chevron-right ms-1"></i>
+                </a>
+            </div>
+        </article>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="bg-dark text-light py-5 mt-5">
+        <div class="container">
+            <div class="row">
+                <!-- Giới thiệu Column -->
+                <div class="col-md-6 col-lg-3 mb-4">
+                    <h4 class="h5 fw-bold text-white mb-3">Giới thiệu</h4>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="javascript:void(0)" class="text-light text-decoration-none hover-amber">Về Chúng Tôi</a></li>
+                        <li class="mb-2"><a href="javascript:void(0)" class="text-light text-decoration-none hover-amber">Sản phẩm</a></li>
+                        <li class="mb-2"><a href="javascript:void(0)" class="text-light text-decoration-none hover-amber">Khuyến mãi</a></li>
+                    </ul>
+                </div>
+
+                <!-- Điều khoản Column -->
+                <div class="col-md-6 col-lg-3 mb-4">
+                    <h4 class="h5 fw-bold text-white mb-3">Điều khoản</h4>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="javascript:void(0)" class="text-light text-decoration-none hover-amber">Điều khoản sử dụng</a></li>
+                        <li class="mb-2"><a href="javascript:void(0)" class="text-light text-decoration-none hover-amber">Chính sách bảo mật thông tin</a></li>
+                        <li class="mb-2"><a href="javascript:void(0)" class="text-light text-decoration-none hover-amber">Hướng dẫn xuất hóa đơn GTGT</a></li>
+                    </ul>
+                </div>
+
+                <!-- Đặt hàng & Liên hệ Column -->
+                <div class="col-md-6 col-lg-3 mb-4">
+                    <h4 class="h5 fw-bold text-white mb-3">
+                        <span class="me-2">Đặt hàng:</span>
+                        <a href="tel:18009999" class="text-warning text-decoration-none">1800 9999</a>
+                    </h4>
+                    <h4 class="h5 fw-bold text-white mb-3">Liên hệ</h4>
+                    <ul class="list-unstyled">
+                        <li class="mb-2">
+                            <p class="small">140 Lê Trọng Tấn, Phường Tây Thạnh, Quận Tân Phú, TP.HCM</p>
+                        </li>
+                        <li class="mt-3">
+                            <div class="d-flex">
+                                <a href="javascript:void(0)" class="text-light me-3 hover-amber">
+                                    <i class="bi bi-facebook fs-5"></i>
+                                </a>
+                                <a href="javascript:void(0)" class="text-light hover-amber">
+                                    <i class="bi bi-instagram fs-5"></i>
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Hình ảnh và bản quyền Column -->
+                <div class="col-md-6 col-lg-3 mb-4">
+                    <div class="rounded overflow-hidden shadow mb-3">
+                        <!-- Google Maps Embed -->
+                        <div class="map-container" style="height: 200px; overflow: hidden;">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31352.804492545703!2d106.6237952!3d10.8036096!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752be27d8b4f4d%3A0x92dcba2950430867!2zVHLGsOG7nW5nIMSQ4bqhaSBo4buNYyBDw7RuZyBUaMawxqFuZyBUUC4gSOG7kyBDaMOtIE1pbmggKEhVSVQp!5e0!3m2!1svi!2s!4v1759064845059!5m2!1svi!2s"
+                                    width="600"
+                                    height="300"
+                                    style="border:0;"
+                                    allowfullscreen=""
+                                    loading="lazy"
+                                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                    </div>
+                    <p class="small">
+                        Công ty cổ phần thương mại dịch vụ Trà Cà Phê VN<br />
+                        Mã số ĐKKD: 0312671172 do sở kế hoạch và đầu tư TP. HCM cấp ngày 23/07/2014. Người đại diện: NGÔ NGUYỄN KHA<br />
+                        Địa chỉ: 263 Lê Trọng Tấn, Phường Tây Thạnh, Quận Tân Phú, Tp Hồ Chí Minh. Điện thoại: (028) 7107 8079. Email: the@escoffier.vn<br />
+                        &copy; 2014-2025 Công ty cổ phần thương mại dịch vụ Trà Cà Phê VN mọi quyền bảo lưu
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        // Simple cart functionality
+        let cartCount = 0;
+
+        function openCartModal() {
+            alert('Giỏ hàng của bạn có ' + cartCount + ' sản phẩm');
+        }
+
+        function updateCartCount() {
+            document.getElementById('cart-count').textContent = cartCount;
+        }
+
+        // Initialize
+        document.addEventListener('DOMContentLoaded', function () {
+            updateCartCount();
+        });
+    </script>
+</body>
+</html>

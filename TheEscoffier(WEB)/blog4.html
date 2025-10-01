@@ -1,0 +1,396 @@
+<!doctype html>
+<html lang="vi">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Chuyện Nhà – Nghệ thuật thưởng trà: từ Uji đến The Escoffier</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/blog1.css">
+</head>
+<body class="text-brown">
+    <!-- HEADER -->
+    <header class="bg-white shadow-sm">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <a class="navbar-brand fw-bold text-brown" href="index.html">THE ESCOFFIER</a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav me-auto">
+                        <li class="nav-item dropdown position-static">
+                            <a class="nav-link dropdown-toggle d-flex align-items-center" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Menu
+                            </a>
+                            <ul class="dropdown-menu mt-0 p-3">
+                                <li><a class="dropdown-item" href="product.html">Tất Cả</a></li>
+
+                                <!-- Cà Phê -->
+                                <li class="dropdown-submenu position-relative w-64">
+                                    <a class="dropdown-item dropdown-toggle" href="product/Caphe.html">Cà Phê</a>
+                                </li>
+
+                                <!-- Matcha -->
+                                <li class="dropdown-submenu position-relative">
+                                    <a class="dropdown-item dropdown-toggle" href="product/Matcha.html">Matcha</a>
+                                </li>
+
+                                <!-- Chocolate -->
+                                <li class="dropdown-submenu position-relative">
+                                    <a class="dropdown-item dropdown-toggle" href="product/Chocolate.html">Chocolate</a>
+                                </li>
+
+                                <li><a class="dropdown-item" href="product/ThucUongDaXay.html">Thức uống đá xay</a></li>
+                                <li><a class="dropdown-item" href="product/cake.html">Bánh & Snack</a></li>
+                                <li><a class="dropdown-item" href="product/ThuongThucTaiNha.html">Thưởng Thức Tại Nhà</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Chuyện Nhà
+                            </a>
+                            <ul class="dropdown-menu p-3" style="min-width: 300px;">
+                                <!-- Trang chủ -->
+                                <li class="mb-2">
+                                    <h6 class="text-brown fw-bold mb-2">Coffeeholic</h6>
+                                    <div class="d-flex flex-wrap gap-1">
+                                        <a href="trangchuyennha.html" class="badge bg-light text-brown text-decoration-none border">#Trangchu</a>
+                                    </div>
+                                </li>
+                                <!-- Coffeeholic -->
+                                <li class="mb-2">
+                                    <h6 class="text-brown fw-bold mb-2">Coffeeholic</h6>
+                                    <div class="d-flex flex-wrap gap-1">
+                                        <a href="blog1.html" class="badge bg-light text-brown text-decoration-none border">#chuyencaphe</a>
+                                        <a href="blog2.html" class="badge bg-light text-brown text-decoration-none border">#phacaphe</a>
+                                    </div>
+                                </li>
+
+                                <li><hr class="my-2"></li>
+                                <!-- Teaholic -->
+                                <li class="mb-2">
+                                    <h6 class="text-brown fw-bold mb-2">Teaholic</h6>
+                                    <div class="d-flex flex-wrap gap-1">
+                                        <a href="blog3.html" class="badge bg-light text-brown text-decoration-none border">#cauchuyenvetra</a>
+                                        <a href="blog4.html" class="badge bg-light text-brown text-decoration-none border">#phatra</a>
+                                    </div>
+                                </li>
+
+                                <li><hr class="my-2"></li>
+
+                                <!-- Blog -->
+                                <li class="mb-2">
+                                    <h6 class="text-brown fw-bold mb-2">Blog</h6>
+                                    <div class="d-flex flex-wrap gap-1">
+                                        <a href="blog1.html" class="badge bg-light text-brown text-decoration-none border">#blog1</a>
+                                        <a href="blog2.html" class="badge bg-light text-brown text-decoration-none border">#blog2</a>
+                                        <a href="blog3.html" class="badge bg-light text-brown text-decoration-none border">#blog3</a>
+                                        <a href="blog4.html" class="badge bg-light text-brown text-decoration-none border">#blog4</a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="tuyendung.html">Tuyển dụng</a>
+                        </li>
+                    </ul>
+
+                    <div class="d-flex align-items-center">
+                        <button class="btn position-relative me-3 border-0" onclick="openCartModal()">
+                            <i class="bi bi-cart3 fs-4 text-brown"></i>
+                            <span id="cart-count" class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">0</span>
+                        </button>
+
+                        <a href="DangNhap.html" class="text-brown" title="Đăng nhập / Đăng ký">
+                            <i class="bi bi-person-circle fs-4"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- CONTENT -->
+    <main class="main-wrap">
+        <article class="post-wrap">
+            <div class="post-hero">
+                <img src="images/hinhanhblog4.jpg" alt="Nghệ thuật thưởng trà tại The Escoffier">
+            </div>
+
+            <div class="post-meta">
+                <span class="tag">Văn hóa trà</span>
+                <span class="dot-sep">·</span>
+                <time datetime="2025-10-05">05/10/2025</time>
+            </div>
+
+            <h1 class="post-title">Nghệ thuật thưởng trà: từ Uji đến The Escoffier</h1>
+
+            <div class="post-content">
+                <p>Trong thế giới của những lá trà xanh, Uji - vùng đất nhỏ bé ở Kyoto, Nhật Bản - được xem như thánh địa của matcha. Những đồi chè nơi đây được chăm sóc tỉ mỉ dưới bàn tay của những nghệ nhân đã dành cả đời để thấu hiểu từng chiếc lá. Và hành trình của những lá trà ấy, từ Uji đến tách matcha latte tại The Escoffier, là một câu chuyện về sự tinh tế, kiên nhẫn và đam mê.</p>
+
+                <div class="highlight-box">
+                    <p><strong>"Trà không chỉ là thức uống, mà là sự giao hòa giữa thiên nhiên, con người và thời gian."</strong></p>
+                </div>
+
+                <h3>Hành trình của những lá trà Tencha</h3>
+                <p>Trước khi trở thành bột matcha mịn màng, những lá trà tại Uji phải trải qua quá trình che phủ đặc biệt. Khoảng 20-30 ngày trước khi thu hoạch, các cây trà được phủ bằng lưới đen để giảm ánh sáng mặt trời trực tiếp. Kỹ thuật này kích thích cây trà sản sinh nhiều chlorophyll hơn, tạo nên màu xanh lục đậm đặc trưng và làm tăng hàm lượng theanine - amino acid mang lại vị ngọt umami cho matcha.</p>
+
+                <div class="tea-process">
+                    <div class="process-step">
+                        <div class="step-icon">
+                            <i class="bi bi-sun"></i>
+                        </div>
+                        <div class="step-content">
+                            <h5>Che phủ</h5>
+                            <p>20-30 ngày trước thu hoạch, cây trà được che nắng để tăng chlorophyll</p>
+                        </div>
+                    </div>
+                    <div class="process-step">
+                        <div class="step-icon">
+                            <i class="bi bi-tree"></i>
+                        </div>
+                        <div class="step-content">
+                            <h5>Thu hoạch thủ công</h5>
+                            <p>Chỉ hái những búp non nhất bằng tay để đảm bảo chất lượng</p>
+                        </div>
+                    </div>
+                    <div class="process-step">
+                        <div class="step-icon">
+                            <i class="bi bi-gear"></i>
+                        </div>
+                        <div class="step-content">
+                            <h5>Hấp & Sấy</h5>
+                            <p>Hấp nhanh để ngăn oxy hóa, sau đó sấy khô thành Tencha</p>
+                        </div>
+                    </div>
+                    <div class="process-step">
+                        <div class="step-icon">
+                            <i class="bi bi-droplet"></i>
+                        </div>
+                        <div class="step-content">
+                            <h5>Xay đá granite</h5>
+                            <p>Xay chậm bằng cối đá granite để không sinh nhiệt làm mất hương vị</p>
+                        </div>
+                    </div>
+                </div>
+
+                <p>Sau khi thu hoạch, lá trà được hấp nhanh để ngăn quá trình oxy hóa, rồi sấy khô và tách bỏ phần gân lá, cuống lá. Phần thịt lá nguyên chất này được gọi là tencha. Quá trình xay tencha thành bột matcha sử dụng những cối đá granite truyền thống, xay với tốc độ chậm để không sinh nhiệt làm mất hương vị. Một cối đá trong một giờ chỉ sản xuất được khoảng 40 gram matcha - đủ cho vài tách trà.</p>
+
+                <h3>Nghệ thuật chuẩn bị matcha</h3>
+                <p>Tại The Escoffier, chúng tôi tôn trọng truyền thống nhưng cũng sáng tạo để phù hợp với nhịp sống hiện đại. Quy trình chuẩn bị một tách matcha ngon bắt đầu từ việc lựa chọn chasen (cây đánh trà bằng tre), chawan (tách trà), và quan trọng nhất là nhiệt độ nước.</p>
+
+                <div class="tea-tips">
+                    <h4>Bí quyết pha matcha hoàn hảo:</h4>
+                    <div class="tips-grid">
+                        <div class="tip-card">
+                            <i class="bi bi-thermometer-high"></i>
+                            <h5>Nhiệt độ nước</h5>
+                            <p>70-80°C - nhiệt độ quá cao làm matcha bị đắng</p>
+                        </div>
+                        <div class="tip-card">
+                            <i class="bi bi-scale"></i>
+                            <h5>Tỷ lệ chuẩn</h5>
+                            <p>2 gram matcha (1.5 thìa cà phê) cho 70ml nước</p>
+                        </div>
+                        <div class="tip-card">
+                            <i class="bi bi-brush"></i>
+                            <h5>Kỹ thuật đánh</h5>
+                            <p>Đánh theo hình chữ W hoặc M nhanh để tạo bọt mịn</p>
+                        </div>
+                        <div class="tip-card">
+                            <i class="bi bi-clock"></i>
+                            <h5>Thời điểm thưởng thức</h5>
+                            <p>Ngay sau khi pha để giữ trọn hương vị</p>
+                        </div>
+                    </div>
+                </div>
+
+                <h3>Matcha latte - sự kết hợp Đông Tây</h3>
+                <p>Trong khi matcha truyền thống (koicha và usucha) giữ nguyên vị đắng nhẹ và ngọt hậu đặc trưng, matcha latte tại The Escoffier là sự hòa quyện tinh tế giữa văn hóa trà Nhật Bản và phong cách phương Tây. Chúng tôi sử dụng matcha hạng ceremonial - loại cao cấp nhất - kết hợp với sữa tươi thanh trùng để tạo nên thức uống cân bằng giữa vị đắng thanh của trà và vị ngọt dịu của sữa.</p>
+
+                <div class="matcha-types">
+                    <div class="matcha-type">
+                        <h5>Usucha (Trà loãng)</h5>
+                        <p>Dùng 2g matcha + 70ml nước, bọt mịn, vị nhẹ nhàng</p>
+                    </div>
+                    <div class="matcha-type">
+                        <h5>Koicha (Trà đặc)</h5>
+                        <p>Dùng 4g matcha + 40ml nước, ít bọt, vị đậm đà</p>
+                    </div>
+                    <div class="matcha-type">
+                        <h5>Matcha Latte</h5>
+                        <p>Kết hợp matcha với sữa, vị cân bằng, phù hợp khẩu vị hiện đại</p>
+                    </div>
+                </div>
+
+                <p>Bí quyết nằm ở chỗ: matcha được đánh riêng với một ít nước nóng trước khi thêm sữa. Điều này đảm bảo bột matcha được hòa tan hoàn toàn, không bị vón cục, và giữ được màu xanh tươi sáng đặc trưng.</p>
+
+                <h3>Lợi ích sức khỏe từ matcha</h3>
+                <p>Khác với trà thông thường, khi uống matcha, bạn đang thực sự tiêu thụ toàn bộ lá trà ở dạng bột. Điều này có nghĩa bạn nhận được 100% chất dinh dưỡng từ lá trà.</p>
+
+                <div class="health-benefits">
+                    <div class="benefit">
+                        <h5>Chất chống oxy hóa</h5>
+                        <p>Lượng EGCG gấp 137 lần trà xanh thông thường</p>
+                    </div>
+                    <div class="benefit">
+                        <h5>L-Theanine</h5>
+                        <p>Amino acid giúp thư giãn mà không gây buồn ngủ</p>
+                    </div>
+                    <div class="benefit">
+                        <h5>Chlorophyll</h5>
+                        <p>Giải độc tự nhiên, tốt cho da và hệ tiêu hóa</p>
+                    </div>
+                    <div class="benefit">
+                        <h5>Caffeine + L-Theanine</h5>
+                        <p>Tỉnh táo kéo dài không gây bồn chồn</p>
+                    </div>
+                </div>
+
+                <h3>Trà và thiền định</h3>
+                <p>Tại The Escoffier, chúng tôi tin rằng thưởng trà không chỉ là uống một thức uống, mà là một hình thức thiền định. Quá trình chuẩn bị matcha - từ việc múc trà, đổ nước, đến đánh trà - đòi hỏi sự tập trung và hiện diện trong khoảnh khắc. Đó là lý do tại sao chúng tôi luôn khuyến khích khách hàng dành ra vài phút để thực sự cảm nhận hương vị, màu sắc và kết cấu của matcha.</p>
+
+                <div class="tea-ceremony">
+                    <h4>Tinh thần Wabi-Sabi trong trà đạo</h4>
+                    <p>Wabi-Sabi - triết lý về vẻ đẹp của sự không hoàn hảo và tính nhất thời - được thể hiện rõ nét trong nghệ thuật trà đạo. Mỗi tách matcha tại The Escoffier không chỉ mang hương vị của Uji, mà còn chứa đựng tinh thần này.</p>
+                    <ul>
+                        <li><strong>Wabi</strong> - Sự giản dị, mộc mạc trong từng động tác</li>
+                        <li><strong>Sabi</strong> - Vẻ đẹp của thời gian, sự trưởng thành</li>
+                        <li><strong>Ichi-go Ichi-e</strong> - Mỗi cuộc gặp gỡ chỉ xảy ra một lần trong đời</li>
+                    </ul>
+                </div>
+
+                <div class="highlight-box">
+                    <p><strong>"Mỗi tách matcha tại The Escoffier không chỉ mang hương vị của Uji, mà còn chứa đựng tinh thần wabi-sabi - vẻ đẹp của sự không hoàn hảo và tính nhất thời."</strong></p>
+                </div>
+
+                <h3>Kết nối cộng đồng qua trà</h3>
+                <p>Chúng tôi thường xuyên tổ chức các workshop về trà, nơi mọi người có thể học cách phân biệt các loại matcha, kỹ thuật pha chế, và tìm hiểu về văn hóa trà đạo Nhật Bản. Những buổi gặp gỡ này không chỉ là nơi chia sẻ kiến thức, mà còn là không gian để mọi người kết nối, thư giãn và tìm thấy sự bình yên trong nhịp sống hối hả.</p>
+
+                <p>Hành trình từ những đồi chè Uji đến The Escoffier là hành trình của sự tôn trọng - tôn trọng thiên nhiên, tôn trọng truyền thống, và trên hết, tôn trọng những khoảnh khắc quý giá mà chúng ta dành cho bản thân và những người xung quanh. Mỗi tách matcha không chỉ là thức uống, mà là lời mời dừng lại, hít một hơi thật sâu, và tận hưởng vẻ đẹp của hiện tại.</p>
+            </div>
+
+            <!-- Quay lại -->
+            <a class="backlink" href="trangchuyennha.html">
+                <i class="bi bi-arrow-left me-2"></i>Quay lại Chuyện Nhà
+            </a>
+
+            <!-- Điều hướng blog -->
+            <div class="blog-nav">
+                <a href="blog3.html" class="nav-prev">
+                    <i class="bi bi-arrow-left me-1"></i>Trang trước
+                </a>
+                <span class="nav-current">Blog 4</span>
+                <a href="blog5.html" class="nav-next">
+                    Trang kế tiếp<i class="bi bi-arrow-right ms-1"></i>
+                </a>
+            </div>
+        </article>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="bg-dark text-light py-5 mt-5">
+        <div class="container">
+            <div class="row">
+                <!-- Giới thiệu Column -->
+                <div class="col-md-6 col-lg-3 mb-4">
+                    <h4 class="h5 fw-bold text-white mb-3">Giới thiệu</h4>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="javascript:void(0)" class="text-light text-decoration-none hover-amber">Về Chúng Tôi</a></li>
+                        <li class="mb-2"><a href="javascript:void(0)" class="text-light text-decoration-none hover-amber">Sản phẩm</a></li>
+                        <li class="mb-2"><a href="javascript:void(0)" class="text-light text-decoration-none hover-amber">Khuyến mãi</a></li>
+                    </ul>
+                </div>
+
+                <!-- Điều khoản Column -->
+                <div class="col-md-6 col-lg-3 mb-4">
+                    <h4 class="h5 fw-bold text-white mb-3">Điều khoản</h4>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="javascript:void(0)" class="text-light text-decoration-none hover-amber">Điều khoản sử dụng</a></li>
+                        <li class="mb-2"><a href="javascript:void(0)" class="text-light text-decoration-none hover-amber">Chính sách bảo mật thông tin</a></li>
+                        <li class="mb-2"><a href="javascript:void(0)" class="text-light text-decoration-none hover-amber">Hướng dẫn xuất hóa đơn GTGT</a></li>
+                    </ul>
+                </div>
+
+                <!-- Đặt hàng & Liên hệ Column -->
+                <div class="col-md-6 col-lg-3 mb-4">
+                    <h4 class="h5 fw-bold text-white mb-3">
+                        <span class="me-2">Đặt hàng:</span>
+                        <a href="tel:18009999" class="text-warning text-decoration-none">1800 9999</a>
+                    </h4>
+                    <h4 class="h5 fw-bold text-white mb-3">Liên hệ</h4>
+                    <ul class="list-unstyled">
+                        <li class="mb-2">
+                            <p class="small">140 Lê Trọng Tấn, Phường Tây Thạnh, Quận Tân Phú, TP.HCM</p>
+                        </li>
+                        <li class="mt-3">
+                            <div class="d-flex">
+                                <a href="javascript:void(0)" class="text-light me-3 hover-amber">
+                                    <i class="bi bi-facebook fs-5"></i>
+                                </a>
+                                <a href="javascript:void(0)" class="text-light hover-amber">
+                                    <i class="bi bi-instagram fs-5"></i>
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Hình ảnh và bản quyền Column -->
+                <div class="col-md-6 col-lg-3 mb-4">
+                    <div class="rounded overflow-hidden shadow mb-3">
+                        <!-- Google Maps Embed -->
+                        <div class="map-container" style="height: 200px; overflow: hidden;">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31352.804492545703!2d106.6237952!3d10.8036096!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752be27d8b4f4d%3A0x92dcba2950430867!2zVHLGsOG7nW5nIMSQ4bqhaSBo4buNYyBDw7RuZyBUaMawxqFuZyBUUC4gSOG7kyBDaMOtIE1pbmggKEhVSVQp!5e0!3m2!1svi!2s!4v1759064845059!5m2!1svi!2s"
+                                    width="600"
+                                    height="300"
+                                    style="border:0;"
+                                    allowfullscreen=""
+                                    loading="lazy"
+                                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                    </div>
+                    <p class="small">
+                        Công ty cổ phần thương mại dịch vụ Trà Cà Phê VN<br />
+                        Mã số ĐKKD: 0312671172 do sở kế hoạch và đầu tư TP. HCM cấp ngày 23/07/2014. Người đại diện: NGÔ NGUYỄN KHA<br />
+                        Địa chỉ: 263 Lê Trọng Tấn, Phường Tây Thạnh, Quận Tân Phú, Tp Hồ Chí Minh. Điện thoại: (028) 7107 8079. Email: the@escoffier.vn<br />
+                        &copy; 2014-2025 Công ty cổ phần thương mại dịch vụ Trà Cà Phê VN mọi quyền bảo lưu
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        // Simple cart functionality
+        let cartCount = 0;
+
+        function openCartModal() {
+            alert('Giỏ hàng của bạn có ' + cartCount + ' sản phẩm');
+        }
+
+        function updateCartCount() {
+            document.getElementById('cart-count').textContent = cartCount;
+        }
+
+        // Initialize
+        document.addEventListener('DOMContentLoaded', function () {
+            updateCartCount();
+        });
+    </script>
+</body>
+</html>

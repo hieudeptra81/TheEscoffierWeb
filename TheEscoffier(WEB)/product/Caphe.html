@@ -1,0 +1,299 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cà phê - The Escoffier</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <!-- CSS tự viết -->
+    <link rel="stylesheet" href="../css/product.css">
+    
+</head>
+
+<body class="text-brown">
+    <div id="message-box" class="shadow"></div>
+
+    <!-- HEADER -->
+    <header class="bg-white shadow-sm">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <a class="navbar-brand fw-bold text-brown" href="../index.html">THE ESCOFFIER</a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav me-auto">
+                        <li class="nav-item dropdown position-static">
+                            <a class="nav-link dropdown-toggle d-flex align-items-center" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Menu
+                            </a>
+                            <ul class="dropdown-menu mt-0 p-3">
+                                <li><a class="dropdown-item" href="javascript:void(0)">Tất Cả</a></li>
+
+                                <!-- Cà Phê -->
+                                <li class="dropdown-submenu position-relative w-64">
+                                    <a class="dropdown-item dropdown-toggle" href="Caphe.html">Cà Phê</a>
+                                </li>
+
+                                <!-- Matcha -->
+                                <li class="dropdown-submenu position-relative">
+                                    <a class="dropdown-item dropdown-toggle" href="Matcha.html">Matcha</a>
+                                </li>
+
+                                <!-- Chocolate -->
+                                <li class="dropdown-submenu position-relative">
+                                    <a class="dropdown-item dropdown-toggle" href="Chocolate.html">Chocolate</a>
+                                </li>
+
+                                <li><a class="dropdown-item" href="ThucUongDaXay.html">Thức uống đá xay</a></li>
+                                <li><a class="dropdown-item" href="cake.html">Bánh & Snack</a></li>
+                                <li><a class="dropdown-item" href="ThuongThucTaiNha.html">Thưởng Thức Tại Nhà</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Chuyện Nhà
+                            </a>
+                            <ul class="dropdown-menu p-3" style="min-width: 300px;">
+                                <!-- Trang chủ -->
+                                <li class="mb-2">
+                                    <h6 class="text-brown fw-bold mb-2">Coffeeholic</h6>
+                                    <div class="d-flex flex-wrap gap-1">
+                                        <a href="../trangchuyennha.html" class="badge bg-light text-brown text-decoration-none border">#Trangchu</a>
+                                    </div>
+                                </li>
+                                <!-- Coffeeholic -->
+                                <li class="mb-2">
+                                    <h6 class="text-brown fw-bold mb-2">Coffeeholic</h6>
+                                    <div class="d-flex flex-wrap gap-1">
+                                        <a href="../blog1.html" class="badge bg-light text-brown text-decoration-none border">#chuyencaphe</a>
+                                        <a href="../blog2.html" class="badge bg-light text-brown text-decoration-none border">#phacaphe</a>
+                                    </div>
+                                </li>
+
+                                <li><hr class="my-2"></li>
+                                <!-- Teaholic -->
+                                <li class="mb-2">
+                                    <h6 class="text-brown fw-bold mb-2">Teaholic</h6>
+                                    <div class="d-flex flex-wrap gap-1">
+                                        <a href="../blog3.html" class="badge bg-light text-brown text-decoration-none border">#cauchuyenvetra</a>
+                                        <a href="../blog4.html" class="badge bg-light text-brown text-decoration-none border">#phatra</a>
+                                    </div>
+                                </li>
+
+                                <li><hr class="my-2"></li>
+
+                                <!-- Blog -->
+                                <li class="mb-2">
+                                    <h6 class="text-brown fw-bold mb-2">Blog</h6>
+                                    <div class="d-flex flex-wrap gap-1">
+                                        <a href="../blog1.html" class="badge bg-light text-brown text-decoration-none border">#blog1</a>
+                                        <a href="../blog2.html" class="badge bg-light text-brown text-decoration-none border">#blog2</a>
+                                        <a href="../blog3.html" class="badge bg-light text-brown text-decoration-none border">#blog3</a>
+                                        <a href="../blog4.html" class="badge bg-light text-brown text-decoration-none border">#blog4</a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="javascript:void(0)">Tuyển dụng</a>
+                        </li>
+                    </ul>
+
+                    <div class="d-flex align-items-center">
+                        <!-- Icon giỏ hàng -->
+                        <a href="../cart/cart.html" class="btn position-relative me-3 border-0">
+                            <i class="bi bi-cart3 fs-4 text-brown"></i>
+                            <span id="cart-count"
+                                class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">0</span>
+                        </a>
+                        <!-- Icon đăng nhập -->
+                        <a href="DangNhap.html" class="text-brown" title="Đăng nhập / Đăng ký">
+                            <i class="bi bi-person-circle fs-4"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- MAIN -->
+    <main class="container my-4">
+        <div class="row">
+            <!-- Sidebar -->
+            <div class="col-lg-3 mb-4">
+                <div class="bg-white rounded p-4 card-shadow">
+                    <h2 class="h5 fw-bold mb-3">Tất cả</h2>
+                    <ul class="list-unstyled">
+                        <li class="mb-2 position-relative">
+                            <a href="Caphe.html" class="text-decoration-none text-brown d-block p-2 rounded hover-amber">Cà Phê</a>
+                        </li>
+                        <li class="mb-2 position-relative">
+                            <a href="Matcha.html" class="text-decoration-none text-brown d-block p-2 rounded hover-amber">Matcha</a>
+                        </li>
+                        <li class="mb-2 position-relative">
+                            <a href="Chocolate.html" class="text-decoration-none text-brown d-block p-2 rounded hover-amber fw-semibold">Chocolate</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="ThucUongDaXay.html" class="text-decoration-none text-brown d-block p-2 rounded hover-amber">Thức uống đá xay</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="cake.html" class="text-decoration-none text-brown d-block p-2 rounded hover-amber">Bánh & Snack</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="ThuongThucTaiNha.html" class="text-decoration-none text-brown d-block p-2 rounded hover-amber">Thưởng Thức Tại Nhà</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Product Grid -->
+            <div id="product-grid" class="col-lg-9">
+                <h1 class="h2 fw-bold mb-4">Cà phê</h1>
+                <div id="product-list" class="row g-4">
+                    <!-- Products will be loaded here by JavaScript -->
+                </div>
+            </div>
+
+            <!-- Product Detail View -->
+            <div id="product-detail-view" class="col-lg-9 d-none">
+                <button onclick="hideProductDetail()" class="btn btn-link text-amber p-0 mb-4 text-decoration-none d-flex align-items-center">
+                    <i class="bi bi-arrow-left me-2"></i>Quay lại menu
+                </button>
+
+                <div class="bg-white rounded p-4 shadow-sm">
+                    <div class="row">
+                        <div class="col-md-6 mb-4">
+                            <img id="detail-image" src="" alt="Product Image" class="img-fluid rounded w-100" style="max-height: 400px; object-fit: cover;">
+                        </div>
+                        <div class="col-md-6 d-flex flex-column">
+                            <div>
+                                <h2 id="detail-name" class="h3 fw-bold mb-2"></h2>
+                                <p id="detail-price" class="text-amber fw-bold fs-5 mb-3"></p>
+                                <p id="detail-description" class="text-muted"></p>
+
+                                <!-- Quantity Adjuster -->
+                                <div class="d-flex align-items-center mt-4">
+                                    <span class="me-3 fw-semibold">Số lượng:</span>
+                                    <div class="d-flex align-items-center border rounded">
+                                        <button id="decrease-qty" class="btn btn-outline-secondary border-0">-</button>
+                                        <span id="product-quantity" class="px-3 py-1 border-start border-end">1</span>
+                                        <button id="increase-qty" class="btn btn-outline-secondary border-0">+</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="mt-auto pt-4">
+                                <button id="add-to-cart-btn" class="btn btn-amber w-100 py-2 fw-semibold">
+                                    Thêm vào giỏ hàng
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Related Products -->
+                <div class="mt-5">
+                    <h3 class="h4 fw-bold mb-4">Sản phẩm liên quan</h3>
+                    <div id="related-products-list" class="row g-4">
+                        <!-- Related products will be loaded here by JavaScript -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="bg-dark text-light py-5 mt-5">
+        <div class="container">
+            <div class="row">
+                <!-- Giới thiệu Column -->
+                <div class="col-md-6 col-lg-3 mb-4">
+                    <h4 class="h5 fw-bold text-white mb-3">Giới thiệu</h4>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="javascript:void(0)" class="text-light text-decoration-none hover-amber">Về Chúng Tôi</a></li>
+                        <li class="mb-2"><a href="javascript:void(0)" class="text-light text-decoration-none hover-amber">Sản phẩm</a></li>
+                        <li class="mb-2"><a href="javascript:void(0)" class="text-light text-decoration-none hover-amber">Khuyến mãi</a></li>
+                    </ul>
+                </div>
+
+                <!-- Điều khoản Column -->
+                <div class="col-md-6 col-lg-3 mb-4">
+                    <h4 class="h5 fw-bold text-white mb-3">Điều khoản</h4>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="javascript:void(0)" class="text-light text-decoration-none hover-amber">Điều khoản sử dụng</a></li>
+                        <li class="mb-2"><a href="javascript:void(0)" class="text-light text-decoration-none hover-amber">Chính sách bảo mật thông tin</a></li>
+                        <li class="mb-2"><a href="javascript:void(0)" class="text-light text-decoration-none hover-amber">Hướng dẫn xuất hóa đơn GTGT</a></li>
+                    </ul>
+                </div>
+
+                <!-- Đặt hàng & Liên hệ Column -->
+                <div class="col-md-6 col-lg-3 mb-4">
+                    <h4 class="h5 fw-bold text-white mb-3">
+                        <span class="me-2">Đặt hàng:</span>
+                        <a href="tel:18009999" class="text-warning text-decoration-none">1800 9999</a>
+                    </h4>
+                    <h4 class="h5 fw-bold text-white mb-3">Liên hệ</h4>
+                    <ul class="list-unstyled">
+                        <li class="mb-2">
+                            <p class="small">140 Lê Trọng Tấn, Phường Tây Thạnh, Quận Tân Phú, TP.HCM</p>
+                        </li>
+                        <li class="mt-3">
+                            <div class="d-flex">
+                                <a href="javascript:void(0)" class="text-light me-3 hover-amber">
+                                    <i class="bi bi-facebook fs-5"></i>
+                                </a>
+                                <a href="javascript:void(0)" class="text-light hover-amber">
+                                    <i class="bi bi-instagram fs-5"></i>
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Hình ảnh và bản quyền Column -->
+                <div class="col-md-6 col-lg-3 mb-4">
+                    <div class="rounded overflow-hidden shadow mb-3">
+                        <!-- Google Maps Embed -->
+                        <div class="map-container" style="height: 200px; overflow: hidden;">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31352.804492545703!2d106.6237952!3d10.8036096!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752be27d8b4f4d%3A0x92dcba2950430867!2zVHLGsOG7nW5nIMSQ4bqhaSBo4buNYyBDw7RuZyBUaMawxqFuZyBUUC4gSOG7kyBDaMOtIE1pbmggKEhVSVQp!5e0!3m2!1svi!2s!4v1759064845059!5m2!1svi!2s"
+                                    width="600"
+                                    height="300"
+                                    style="border:0;"
+                                    allowfullscreen=""
+                                    loading="lazy"
+                                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                    </div>
+                    <p class="small">
+                        Công ty cổ phần thương mại dịch vụ Trà Cà Phê VN<br />
+                        Mã số ĐKKD: 0312671172 do sở kế hoạch và đầu tư TP. HCM cấp ngày 23/07/2014. Người đại diện: NGÔ NGUYỄN KHA<br />
+                        Địa chỉ: 263 Lê Trọng Tấn, Phường Tây Thạnh, Quận Tân Phú, Tp Hồ Chí Minh. Điện thoại: (028) 7107 8079. Email: the@escoffier.vn<br />
+                        &copy; 2014-2022 Công ty cổ phần thương mại dịch vụ Trà Cà Phê VN mọi quyền bảo lưu
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Floating button -->
+        <button class="position-fixed bottom-0 end-0 m-4 bg-warning text-white p-3 rounded-circle shadow border-0"
+                onclick="showMessage('Bạn đã chọn biểu tượng hỗ trợ khách hàng');">
+            <i class="bi bi-headset fs-5"></i>
+        </button>
+    </footer>
+    <script src="../js/cart-manager.js"></script>
+    <script src="../js/java.js"></script>
+    <script src="../js/Caphe.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

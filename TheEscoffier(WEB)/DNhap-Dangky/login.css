@@ -1,0 +1,165 @@
+body {
+            background-image: url("https://images.unsplash.com/photo-1509042239860-f550ce710b93");
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            font-family: "Times New Roman", serif;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .khungdangnhap {
+            background: rgba(255, 255, 255, 0.95);
+            padding: 30px;
+            border-radius: 15px;
+            width: 100%;
+            max-width: 400px;
+            text-align: center;
+            box-shadow: 0 0 20px rgba(0,0,0,0.4);
+            backdrop-filter: blur(10px);
+        }
+
+        .khungdangnhap img {
+            width: 90px;
+            margin-bottom: 15px;
+        }
+
+        .khungdangnhap h3 {
+            color: #6f4e37;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        .khungdangnhap p {
+            color: #666;
+            margin-bottom: 25px;
+        }
+
+        .onhap {
+            width: 100%;
+            padding: 12px;
+            margin: 10px 0;
+            border-radius: 8px;
+            border: 1px solid #ddd;
+            font-size: 14px;
+            transition: border-color 0.3s ease;
+        }
+
+        .onhap:focus {
+            border-color: #6f4e37;
+            outline: none;
+            box-shadow: 0 0 5px rgba(111, 78, 55, 0.3);
+        }
+
+        .nutdangnhap {
+            width: 100%;
+            padding: 12px;
+            background: #6f4e37; 
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: bold;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+            margin-top: 10px;
+        }
+
+        .nutdangnhap:hover {
+            background: #5a3e2c;
+        }
+
+        .nutdangnhap:disabled {
+            background: #ccc;
+            cursor: not-allowed;
+        }
+
+        a {
+            text-decoration: none;
+            color: #6f4e37;
+            font-size: 14px;
+        }
+
+        a:hover {
+            text-decoration: underline;
+            color: #5a3e2c;
+        }
+
+        .password-wrapper {
+            position: relative;
+        }
+
+        .toggle-icon {
+            position: absolute;
+            right: 15px;
+            top: 50%;
+            transform: translateY(-50%);
+            cursor: pointer;
+            color: #666;
+            font-size: 16px;
+        }
+
+        .back-home {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            color: white;
+            font-size: 1.2rem;
+            text-decoration: none;
+            padding: 10px 15px;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 50px;
+            transition: all 0.3s ease;
+            backdrop-filter: blur(10px);
+        }
+
+        .back-home:hover {
+            background: rgba(255, 255, 255, 0.3);
+            color: white;
+            text-decoration: none;
+            transform: translateX(-5px);
+        }
+
+        .alert {
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+
+        .alert-danger {
+            background-color: #f8d7da;
+            border-color: #f5c6cb;
+            color: #721c24;
+        }
+
+        .alert-success {
+            background-color: #d4edda;
+            border-color: #c3e6cb;
+            color: #155724;
+        }
+
+        .login-links {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 15px;
+            gap: 10px;
+        }
+
+        @media (max-width: 768px) {
+            .khungdangnhap {
+                margin: 10px;
+                padding: 25px;
+            }
+
+            .back-home {
+                top: 10px;
+                left: 10px;
+                padding: 8px 12px;
+                font-size: 1rem;
+            }
+        }

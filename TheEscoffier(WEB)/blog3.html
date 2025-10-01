@@ -1,0 +1,372 @@
+<!doctype html>
+<html lang="vi">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Chuyện Nhà – Gu thưởng thức cà phê của người sành điệu</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/blog1.css">
+</head>
+<body class="text-brown">
+    <!-- HEADER -->
+    <header class="bg-white shadow-sm">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <a class="navbar-brand fw-bold text-brown" href="index.html">THE ESCOFFIER</a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav me-auto">
+                        <li class="nav-item dropdown position-static">
+                            <a class="nav-link dropdown-toggle d-flex align-items-center" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Menu
+                            </a>
+                            <ul class="dropdown-menu mt-0 p-3">
+                                <li><a class="dropdown-item" href="product.html">Tất Cả</a></li>
+
+                                <!-- Cà Phê -->
+                                <li class="dropdown-submenu position-relative w-64">
+                                    <a class="dropdown-item dropdown-toggle" href="product/Caphe.html">Cà Phê</a>
+                                </li>
+
+                                <!-- Matcha -->
+                                <li class="dropdown-submenu position-relative">
+                                    <a class="dropdown-item dropdown-toggle" href="product/Matcha.html">Matcha</a>
+                                </li>
+
+                                <!-- Chocolate -->
+                                <li class="dropdown-submenu position-relative">
+                                    <a class="dropdown-item dropdown-toggle" href="product/Chocolate.html">Chocolate</a>
+                                </li>
+
+                                <li><a class="dropdown-item" href="product/ThucUongDaXay.html">Thức uống đá xay</a></li>
+                                <li><a class="dropdown-item" href="product/cake.html">Bánh & Snack</a></li>
+                                <li><a class="dropdown-item" href="product/ThuongThucTaiNha.html">Thưởng Thức Tại Nhà</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Chuyện Nhà
+                            </a>
+                            <ul class="dropdown-menu p-3" style="min-width: 300px;">
+                                <!-- Trang chủ -->
+                                <li class="mb-2">
+                                    <h6 class="text-brown fw-bold mb-2">Coffeeholic</h6>
+                                    <div class="d-flex flex-wrap gap-1">
+                                        <a href="trangchuyennha.html" class="badge bg-light text-brown text-decoration-none border">#Trangchu</a>
+                                    </div>
+                                </li>
+                                <!-- Coffeeholic -->
+                                <li class="mb-2">
+                                    <h6 class="text-brown fw-bold mb-2">Coffeeholic</h6>
+                                    <div class="d-flex flex-wrap gap-1">
+                                        <a href="blog1.html" class="badge bg-light text-brown text-decoration-none border">#chuyencaphe</a>
+                                        <a href="blog2.html" class="badge bg-light text-brown text-decoration-none border">#phacaphe</a>
+                                    </div>
+                                </li>
+
+                                <li><hr class="my-2"></li>
+                                <!-- Teaholic -->
+                                <li class="mb-2">
+                                    <h6 class="text-brown fw-bold mb-2">Teaholic</h6>
+                                    <div class="d-flex flex-wrap gap-1">
+                                        <a href="blog3.html" class="badge bg-light text-brown text-decoration-none border">#cauchuyenvetra</a>
+                                        <a href="blog4.html" class="badge bg-light text-brown text-decoration-none border">#phatra</a>
+                                    </div>
+                                </li>
+
+                                <li><hr class="my-2"></li>
+
+                                <!-- Blog -->
+                                <li class="mb-2">
+                                    <h6 class="text-brown fw-bold mb-2">Blog</h6>
+                                    <div class="d-flex flex-wrap gap-1">
+                                        <a href="blog1.html" class="badge bg-light text-brown text-decoration-none border">#blog1</a>
+                                        <a href="blog2.html" class="badge bg-light text-brown text-decoration-none border">#blog2</a>
+                                        <a href="blog3.html" class="badge bg-light text-brown text-decoration-none border">#blog3</a>
+                                        <a href="blog4.html" class="badge bg-light text-brown text-decoration-none border">#blog4</a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="tuyendung.html">Tuyển dụng</a>
+                        </li>
+                    </ul>
+
+                    <div class="d-flex align-items-center">
+                        <button class="btn position-relative me-3 border-0" onclick="openCartModal()">
+                            <i class="bi bi-cart3 fs-4 text-brown"></i>
+                            <span id="cart-count" class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">0</span>
+                        </button>
+
+                        <a href="DangNhap.html" class="text-brown" title="Đăng nhập / Đăng ký">
+                            <i class="bi bi-person-circle fs-4"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- CONTENT -->
+    <main class="main-wrap">
+        <article class="post-wrap">
+            <div class="post-hero">
+                <img src="images/hinhanhblog3.jpg" alt="Gu thưởng thức cà phê của người sành điệu">
+            </div>
+
+            <div class="post-meta">
+                <span class="tag">Gu cà phê</span>
+                <span class="dot-sep">·</span>
+                <time datetime="2025-09-29">29/09/2025</time>
+            </div>
+
+            <h1 class="post-title">Gu thưởng thức cà phê của người sành điệu</h1>
+
+            <div class="post-content">
+                <p>Người sành điệu tìm sự cân bằng giữa hương và vị: acid sáng, hậu ngọt kéo dài, và sự phức tạp của hương thơm từ những vùng đất khác nhau. Họ không chỉ uống cà phê, mà còn "đọc" được câu chuyện đằng sau mỗi tách.</p>
+
+                <h3>Phân biệt hương vị - Nghệ thuật của vị giác</h3>
+                <p>Một người sành cà phê có khả năng phân biệt được ít nhất 5-7 hương vị khác nhau trong cùng một tách. Từ vị chua của trái cây họ cam quýt đến vị ngọt của caramel, từ hương hoa nhài đến hương sô cô la đen. Khả năng này không phải tự nhiên mà có, mà được rèn luyện qua thời gian và sự chú ý đến từng chi tiết.</p>
+
+                <div class="flavor-wheel">
+                    <h4>Bánh xe hương vị cà phê</h4>
+                    <div class="flavor-categories">
+                        <div class="flavor-category">
+                            <h5>Hương trái cây</h5>
+                            <ul>
+                                <li>Cam, chanh</li>
+                                <li>Dâu, mâm xôi</li>
+                                <li>Đào, mơ</li>
+                            </ul>
+                        </div>
+                        <div class="flavor-category">
+                            <h5>Hương hoa</h5>
+                            <ul>
+                                <li>Hoa nhài</li>
+                                <li>Hoa hồng</li>
+                                <li>Oải hương</li>
+                            </ul>
+                        </div>
+                        <div class="flavor-category">
+                            <h5>Hương hạt & gia vị</h5>
+                            <ul>
+                                <li>Hạnh nhân</li>
+                                <li>Quế</li>
+                                <li>Sô cô la</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <h3>Các vùng cà phê đặc trưng</h3>
+                <p>Mỗi vùng đất mang đến cho cà phê một "giọng" riêng biệt. Người sành điệu có thể nhận diện được xuất xứ của cà phê chỉ qua hương vị:</p>
+
+                <div class="coffee-regions">
+                    <div class="region-card">
+                        <h5>Ethiopia - Yirgacheffe</h5>
+                        <p>Hương hoa, trà, chua thanh mát, hậu vị trà xanh</p>
+                    </div>
+                    <div class="region-card">
+                        <h5>Colombia - Huila</h5>
+                        <p>Cân bằng, hương caramel, hạt dẻ, hậu ngọt kéo dài</p>
+                    </div>
+                    <div class="region-card">
+                        <h5>Vietnam - Cầu Đất</h5>
+                        <p>Đậm đà, hương sô cô la, hạnh nhân, ít chua</p>
+                    </div>
+                </div>
+
+                <h3>Phương pháp thử nếm (Cupping)</h3>
+                <p>Cupping là phương pháp chuyên nghiệp để đánh giá chất lượng cà phê. Người sành điệu thường áp dụng kỹ thuật này tại nhà với các bước cơ bản:</p>
+
+                <div class="cupping-steps">
+                    <div class="step">
+                        <span class="step-number">1</span>
+                        <div class="step-content">
+                            <h5>Ngửi hương khô</h5>
+                            <p>Đánh giá hương thơm của bột cà phê trước khi pha</p>
+                        </div>
+                    </div>
+                    <div class="step">
+                        <span class="step-number">2</span>
+                        <div class="step-content">
+                            <h5>Ngửi hương ướt</h5>
+                            <p>Đánh giá hương thơm sau khi thêm nước nóng</p>
+                        </div>
+                    </div>
+                    <div class="step">
+                        <span class="step-number">3</span>
+                        <div class="step-content">
+                            <h5>Nếm bằng thìa</h5>
+                            <p>Húp mạnh để cà phê lan tỏa khắp vòm miệng</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="expert-tips">
+                    <h4>Bí quyết từ chuyên gia</h4>
+                    <div class="tips-grid">
+                        <div class="tip-card">
+                            <i class="bi bi-cup-hot"></i>
+                            <h5>Nhiệt độ nước</h5>
+                            <p>92-96°C là nhiệt độ lý tưởng để chiết xuất</p>
+                        </div>
+                        <div class="tip-card">
+                            <i class="bi bi-clock"></i>
+                            <h5>Thời gian ủ</h5>
+                            <p>Pour-over: 2-3 phút, French press: 4 phút</p>
+                        </div>
+                        <div class="tip-card">
+                            <i class="bi bi-droplet"></i>
+                            <h5>Tỷ lệ nước</h5>
+                            <p>1:15 - 1:17 (cà phê:nước) cho hương vị cân bằng</p>
+                        </div>
+                    </div>
+                </div>
+
+                <h3>Xu hướng thưởng thức hiện đại</h3>
+                <p>Người sành điệu ngày nay không chỉ quan tâm đến hương vị mà còn chú trọng đến tính bền vững và nguồn gốc minh bạch. Họ ưu tiên:</p>
+
+                <ul class="modern-trends">
+                    <li><strong>Cà phê đơn nguồn gốc</strong> - Traceability từ nông trại đến tách</li>
+                    <li><strong>Rang nhẹ</strong> - Để lộ rõ đặc tính tự nhiên của hạt</li>
+                    <li><strong>Pha thủ công</strong> - Pour-over, AeroPress, Cold brew</li>
+                    <li><strong>Bảo vệ môi trường</strong> - Bao bì tái chế, compostable</li>
+                </ul>
+
+                <div class="highlight-box">
+                    <p><strong>"Thưởng thức cà phê không phải là cuộc đua, mà là hành trình khám phá. Mỗi tách là một câu chuyện, mỗi hương vị là một ký ức."</strong></p>
+                </div>
+
+                <h3>Kết luận</h3>
+                <p>Trở thành người sành điệu không có nghĩa là phải chi nhiều tiền cho những loại cà phê đắt đỏ. Điều quan trọng là sự tò mò, sẵn sàng học hỏi và khả năng lắng nghe chính cảm nhận của bản thân. Bắt đầu từ những tách cà phê đơn giản, ghi chép lại cảm nhận, và dần dần bạn sẽ xây dựng được "thư viện hương vị" cho riêng mình.</p>
+
+                <p>Tại The Escoffier, chúng tôi tin rằng mọi người đều có thể trở thành người sành cà phê theo cách riêng của mình. Quan trọng nhất là tìm thấy niềm vui trong hành trình khám phá đó.</p>
+            </div>
+
+            <a class="backlink" href="trangchuyennha.html">
+                <i class="bi bi-arrow-left me-2"></i>Quay lại Chuyện Nhà
+            </a>
+
+            <!-- Điều hướng blog -->
+            <div class="blog-nav">
+                <a href="blog2.html" class="nav-prev">
+                    <i class="bi bi-chevron-left me-1"></i>Trang trước
+                </a>
+                <span class="nav-current">Blog 3</span>
+                <a href="blog4.html" class="nav-next">
+                    Trang kế tiếp<i class="bi bi-chevron-right ms-1"></i>
+                </a>
+            </div>
+        </article>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="bg-dark text-light py-5 mt-5">
+        <div class="container">
+            <div class="row">
+                <!-- Giới thiệu Column -->
+                <div class="col-md-6 col-lg-3 mb-4">
+                    <h4 class="h5 fw-bold text-white mb-3">Giới thiệu</h4>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="javascript:void(0)" class="text-light text-decoration-none hover-amber">Về Chúng Tôi</a></li>
+                        <li class="mb-2"><a href="javascript:void(0)" class="text-light text-decoration-none hover-amber">Sản phẩm</a></li>
+                        <li class="mb-2"><a href="javascript:void(0)" class="text-light text-decoration-none hover-amber">Khuyến mãi</a></li>
+                    </ul>
+                </div>
+
+                <!-- Điều khoản Column -->
+                <div class="col-md-6 col-lg-3 mb-4">
+                    <h4 class="h5 fw-bold text-white mb-3">Điều khoản</h4>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="javascript:void(0)" class="text-light text-decoration-none hover-amber">Điều khoản sử dụng</a></li>
+                        <li class="mb-2"><a href="javascript:void(0)" class="text-light text-decoration-none hover-amber">Chính sách bảo mật thông tin</a></li>
+                        <li class="mb-2"><a href="javascript:void(0)" class="text-light text-decoration-none hover-amber">Hướng dẫn xuất hóa đơn GTGT</a></li>
+                    </ul>
+                </div>
+
+                <!-- Đặt hàng & Liên hệ Column -->
+                <div class="col-md-6 col-lg-3 mb-4">
+                    <h4 class="h5 fw-bold text-white mb-3">
+                        <span class="me-2">Đặt hàng:</span>
+                        <a href="tel:18009999" class="text-warning text-decoration-none">1800 9999</a>
+                    </h4>
+                    <h4 class="h5 fw-bold text-white mb-3">Liên hệ</h4>
+                    <ul class="list-unstyled">
+                        <li class="mb-2">
+                            <p class="small">140 Lê Trọng Tấn, Phường Tây Thạnh, Quận Tân Phú, TP.HCM</p>
+                        </li>
+                        <li class="mt-3">
+                            <div class="d-flex">
+                                <a href="javascript:void(0)" class="text-light me-3 hover-amber">
+                                    <i class="bi bi-facebook fs-5"></i>
+                                </a>
+                                <a href="javascript:void(0)" class="text-light hover-amber">
+                                    <i class="bi bi-instagram fs-5"></i>
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Hình ảnh và bản quyền Column -->
+                <div class="col-md-6 col-lg-3 mb-4">
+                    <div class="rounded overflow-hidden shadow mb-3">
+                        <!-- Google Maps Embed -->
+                        <div class="map-container" style="height: 200px; overflow: hidden;">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31352.804492545703!2d106.6237952!3d10.8036096!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752be27d8b4f4d%3A0x92dcba2950430867!2zVHLGsOG7nW5nIMSQ4bqhaSBo4buNYyBDw7RuZyBUaMawxqFuZyBUUC4gSOG7kyBDaMOtIE1pbmggKEhVSVQp!5e0!3m2!1svi!2s!4v1759064845059!5m2!1svi!2s"
+                                    width="600"
+                                    height="300"
+                                    style="border:0;"
+                                    allowfullscreen=""
+                                    loading="lazy"
+                                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                    </div>
+                    <p class="small">
+                        Công ty cổ phần thương mại dịch vụ Trà Cà Phê VN<br />
+                        Mã số ĐKKD: 0312671172 do sở kế hoạch và đầu tư TP. HCM cấp ngày 23/07/2014. Người đại diện: NGÔ NGUYỄN KHA<br />
+                        Địa chỉ: 263 Lê Trọng Tấn, Phường Tây Thạnh, Quận Tân Phú, Tp Hồ Chí Minh. Điện thoại: (028) 7107 8079. Email: the@escoffier.vn<br />
+                        &copy; 2014-2025 Công ty cổ phần thương mại dịch vụ Trà Cà Phê VN mọi quyền bảo lưu
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        // Simple cart functionality
+        let cartCount = 0;
+
+        function openCartModal() {
+            alert('Giỏ hàng của bạn có ' + cartCount + ' sản phẩm');
+        }
+
+        function updateCartCount() {
+            document.getElementById('cart-count').textContent = cartCount;
+        }
+
+        // Initialize
+        document.addEventListener('DOMContentLoaded', function () {
+            updateCartCount();
+        });
+    </script>
+</body>
+</html>

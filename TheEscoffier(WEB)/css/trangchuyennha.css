@@ -1,0 +1,248 @@
+﻿/* Trang Chuyện Nhà Styles */
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f8f9fa;
+    line-height: 1.6;
+}
+
+.text-brown {
+    color: #6b4f3a !important;
+}
+
+.bg-brown {
+    background-color: #6b4f3a;
+}
+
+.hover-amber:hover {
+    color: #d2691e !important;
+}
+
+/* Hero Section */
+.hero-section {
+    background: linear-gradient(135deg, rgba(107, 79, 58, 0.1) 0%, rgba(255, 255, 255, 0.8) 100%);
+    padding: 4rem 0;
+    margin-bottom: 3rem;
+}
+
+.section-title {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #6b4f3a;
+    text-align: center;
+    margin-bottom: 1rem;
+    position: relative;
+}
+
+    .section-title::after {
+        content: "";
+        display: block;
+        width: 80px;
+        height: 4px;
+        background: #d2691e;
+        margin: 1rem auto;
+        border-radius: 2px;
+    }
+
+.section-subtitle {
+    font-size: 1.2rem;
+    color: #666;
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto 2rem;
+}
+
+/* Blog Grid */
+.blog-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+.blog-card {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: 100%;
+}
+
+    .blog-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+    }
+
+.blog-image {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.blog-content {
+    padding: 1.5rem;
+}
+
+.blog-meta {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 0.75rem;
+    font-size: 0.85rem;
+    color: #666;
+}
+
+.blog-tag {
+    background: #fff6f1;
+    color: #6b4f3a;
+    padding: 0.25rem 0.75rem;
+    border-radius: 20px;
+    border: 1px solid rgba(107, 79, 58, 0.2);
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+.blog-title {
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: #2c2c2c;
+    margin-bottom: 0.75rem;
+    line-height: 1.3;
+}
+
+    .blog-title a {
+        color: inherit;
+        text-decoration: none;
+        transition: color 0.3s ease;
+    }
+
+        .blog-title a:hover {
+            color: #d2691e;
+        }
+
+.blog-excerpt {
+    color: #666;
+    margin-bottom: 1rem;
+    line-height: 1.5;
+}
+
+.read-more {
+    color: #6b4f3a;
+    text-decoration: none;
+    font-weight: 500;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: color 0.3s ease;
+}
+
+    .read-more:hover {
+        color: #d2691e;
+    }
+
+/* Category Filter */
+.category-filter {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 3rem;
+    flex-wrap: wrap;
+}
+
+.category-btn {
+    padding: 0.75rem 1.5rem;
+    border: 2px solid #6b4f3a;
+    background: white;
+    color: #6b4f3a;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+    .category-btn:hover,
+    .category-btn.active {
+        background: #6b4f3a;
+        color: white;
+    }
+
+/* Sidebar */
+.sidebar {
+    background: white;
+    border-radius: 12px;
+    padding: 2rem;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.sidebar-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #6b4f3a;
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid #f0f0f0;
+}
+
+.sidebar-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+    .sidebar-links li {
+        margin-bottom: 0.75rem;
+    }
+
+    .sidebar-links a {
+        color: #666;
+        text-decoration: none;
+        transition: color 0.3s ease;
+        display: block;
+        padding: 0.5rem 0;
+    }
+
+        .sidebar-links a:hover {
+            color: #d2691e;
+            padding-left: 0.5rem;
+        }
+
+/* Newsletter */
+.newsletter-section {
+    background: linear-gradient(135deg, #6b4f3a 0%, #8b6b4f 100%);
+    color: white;
+    padding: 3rem 2rem;
+    border-radius: 12px;
+    margin: 4rem 0;
+    text-align: center;
+}
+
+.newsletter-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.newsletter-form {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+    .section-title {
+        font-size: 2.5rem;
+    }
+
+    .blog-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .category-filter {
+        gap: 0.5rem;
+    }
+
+    .category-btn {
+        padding: 0.5rem 1rem;
+        font-size: 0.9rem;
+    }
+}

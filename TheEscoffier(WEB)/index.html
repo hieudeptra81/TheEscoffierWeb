@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee House - Hương vị cà phê đậm đà</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;700&family=Inter:wght@300;400;500;600&display=swap"
+          rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./css/style.css">
+
+</head>
+
+<body>
+    <!-- Navigation -->
+    <header class="bg-white shadow-sm">
+        <div class="container">
+            <div class="d-flex justify-content-between align-items-center py-3">
+                <div class="d-flex align-items-center">
+                    <a href="javascript:void(0)" class="fw-bold text-lg text-brown text-decoration-none me-5">
+                        THE ESCOFFIER
+                    </a>
+                    <nav class="d-none d-md-flex align-items-center">
+                        <div class="dropdown me-4">
+                            <a href="javascript:void(0)" class="d-flex align-items-center text-dark text-decoration-none fw-semibold dropdown-toggle"
+                               data-bs-toggle="dropdown" aria-expanded="false">
+                                <span>Menu</span>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a href="javascript:void(0)" title="Tất Cả"
+                                       class="dropdown-item">
+                                        Tất Cả
+                                    </a>
+                                </li>
+                                <!-- Cà Phê -->
+                                <li>
+                                    <a href="product/Caphe.html" title="Cà Phê"
+                                       class="dropdown-item">
+                                        Cà Phê
+                                    </a>
+                                </li>
+                                <!-- Matcha -->
+                                <li>
+                                    <a href="product/Matcha.html" title="Matcha "
+                                       class="dropdown-item">Matcha</a>
+                                </li>
+                                <!-- Chocolate -->
+                                <li>
+                                    <a href="product/Chocolate.html" title="Chocolate"
+                                       class="dropdown-item">Chocolate</a>
+                                </li>
+                                <li>
+                                    <a href="product/ThucUongDaXay.html"
+                                       class="dropdown-item d-flex align-items-center">
+                                        <span>Thức uống đá xay</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="product/cake.html"
+                                       class="dropdown-item d-flex align-items-center">
+                                        <span>Bánh & Snack</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="product/ThuongThucTaiNha.html"
+                                       class="dropdown-item d-flex align-items-center">
+                                        <span>Thưởng Thức Tại Nhà</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="dropdown me-4">
+                            <a class="nav-link dropdown-toggle text-dark text-decoration-none fw-semibold" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Chuyện Nhà
+                            </a>
+                            <ul class="dropdown-menu p-3" style="min-width: 300px;">
+                                <!-- Trang chủ -->
+                                <li class="mb-2">
+                                    <h6 class="text-brown fw-bold mb-2">Coffeeholic</h6>
+                                    <div class="d-flex flex-wrap gap-1">
+                                        <a href="trangchuyennha.html" class="badge bg-light text-brown text-decoration-none border">#Trangchu</a>
+                                    </div>
+                                </li>
+                                <!-- Coffeeholic -->
+                                <li class="mb-2">
+                                    <h6 class="text-brown fw-bold mb-2">Coffeeholic</h6>
+                                    <div class="d-flex flex-wrap gap-1">
+                                        <a href="blog1.html" class="badge bg-light text-brown text-decoration-none border">#chuyencaphe</a>
+                                        <a href="blog2.html" class="badge bg-light text-brown text-decoration-none border">#phacaphe</a>
+                                    </div>
+                                </li>
+
+                                <li><hr class="my-2"></li>
+                                <!-- Teaholic -->
+                                <li class="mb-2">
+                                    <h6 class="text-brown fw-bold mb-2">Teaholic</h6>
+                                    <div class="d-flex flex-wrap gap-1">
+                                        <a href="blog3.html" class="badge bg-light text-brown text-decoration-none border">#cauchuyenvetra</a>
+                                        <a href="blog4.html" class="badge bg-light text-brown text-decoration-none border">#phatra</a>
+                                    </div>
+                                </li>
+
+                                <li><hr class="my-2"></li>
+
+                                <!-- Blog -->
+                                <li class="mb-2">
+                                    <h6 class="text-brown fw-bold mb-2">Blog</h6>
+                                    <div class="d-flex flex-wrap gap-1">
+                                        <a href="blog1.html" class="badge bg-light text-brown text-decoration-none border">#blog1</a>
+                                        <a href="blog2.html" class="badge bg-light text-brown text-decoration-none border">#blog2</a>
+                                        <a href="blog3.html" class="badge bg-light text-brown text-decoration-none border">#blog3</a>
+                                        <a href="blog4.html" class="badge bg-light text-brown text-decoration-none border">#blog4</a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <a href="javascript:void(0)" class="text-dark text-decoration-none fw-semibold me-4">Tuyển dụng</a>
+                    </nav>
+                </div>
+
+                <div class="d-flex align-items-center">
+                    <div class="position-relative me-4">
+                        <button onclick="openCartModal()" class="btn btn-link p-0 border-0">
+                            <i class="fa-solid fa-cart-shopping fs-4 text-dark"></i>
+                            <span id="cart-count"
+                                  class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                                3
+                            </span>
+                        </button>
+                    </div>
+
+                    <div id="user-menu" class="position-relative">
+                        <!-- Hiển thị khi chưa đăng nhập -->
+                        <div id="login-section" class="login-section">
+                            <a href="/DNhap-Dangky/DangNhap.html"
+                               class="d-flex flex-column align-items-center text-dark text-decoration-none"
+                               title="Đăng nhập / Đăng ký">
+                                <i class="fa fa-user fs-5 mb-1"></i>
+                                <span class="small">Đăng nhập</span>
+                            </a>
+                        </div>
+
+                        <!-- Hiển thị khi đã đăng nhập -->
+                        <div id="user-section" class="user-section d-none">
+                            <div class="dropdown">
+                                <button class="btn btn-link p-0 border-0 d-flex align-items-center text-dark text-decoration-none dropdown-toggle"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                    <div class="rounded-circle bg-amber-600 d-flex align-items-center justify-content-center text-white fw-semibold me-2"
+                                         style="width: 32px; height: 32px;">
+                                        <span id="user-avatar">U</span>
+                                    </div>
+                                    <div class="d-flex flex-column align-items-start">
+                                        <span class="small text-muted">Đăng nhập</span>
+                                        <span id="user-name-display" class="small fw-semibold">User</span>
+                                    </div>
+                                </button>
+
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <a class="dropdown-item" href="/Profile/profile.html">
+                                            <i class="fas fa-user me-2"></i>Hồ sơ cá nhân
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="javascript:void(0)" onclick="logout()">
+                                            <i class="fas fa-sign-out-alt me-2"></i>Đăng xuất
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="hero-overlay"></div>
+        <div class="container h-100">
+            <div class="row h-100 align-items-center">
+                <div class="col-lg-8 mx-auto text-center">
+                    <h1 class="hero-title mb-4">Chào mừng đến với Coffee House</h1>
+                    <p class="hero-subtitle mb-5">Nơi hội tụ hương vị cà phê đậm đà và không gian ấm cúng</p>
+                    <div class="hero-buttons">
+                        <a href="#menu" class="btn btn-primary btn-lg me-3">
+                            <i class="fas fa-utensils me-2"></i>Xem Menu
+                        </a>
+                        <a href="#about" class="btn btn-outline-light btn-lg">
+                            <i class="fas fa-info-circle me-2"></i>Tìm hiểu thêm
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features-section py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 text-center mb-4">
+                    <div class="feature-card h-100">
+                        <div class="feature-icon">
+                            <i class="fas fa-seedling"></i>
+                        </div>
+                        <h4>Cà phê organic</h4>
+                        <p>
+                            Chúng tôi chỉ sử dụng hạt cà phê organic chất lượng cao, được trồng theo phương pháp tự
+                            nhiên.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-4 text-center mb-4">
+                    <div class="feature-card h-100">
+                        <div class="feature-icon">
+                            <i class="fas fa-fire"></i>
+                        </div>
+                        <h4>Rang tươi hàng ngày</h4>
+                        <p>Hạt cà phê được rang tươi mỗi ngày để đảm bảo hương vị đậm đà và thơm ngon nhất.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 text-center mb-4">
+                    <div class="feature-card h-100">
+                        <div class="feature-icon">
+                            <i class="fas fa-heart"></i>
+                        </div>
+                        <h4>Pha chế tận tâm</h4>
+                        <p>Đội ngũ barista giàu kinh nghiệm pha chế từng ly cà phê với tình yêu và sự tỉ mỉ.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="menu-section py-5">
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col-lg-6 mx-auto text-center">
+                    <h2 class="section-title">Menu Đặc Biệt</h2>
+                    <p class="section-subtitle">Khám phá những ly cà phê tuyệt vời của chúng tôi</p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="menu-card">
+                        <div class="menu-image">
+                            <img src="https://images.pexels.com/photos/302899/pexels-photo-302899.jpeg?auto=compress&cs=tinysrgb&w=400"
+                                 alt="Espresso" class="img-fluid">
+                        </div>
+                        <div class="menu-content">
+                            <h5>Espresso</h5>
+                            <p>Cà phê nguyên chất, đậm đà với hương vị mạnh mẽ</p>
+                            <div class="menu-price">45,000đ</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="menu-card">
+                        <div class="menu-image">
+                            <img src="https://images.pexels.com/photos/312418/pexels-photo-312418.jpeg?auto=compress&cs=tinysrgb&w=400"
+                                 alt="Cappuccino" class="img-fluid">
+                        </div>
+                        <div class="menu-content">
+                            <h5>Cappuccino</h5>
+                            <p>Sự kết hợp hoàn hảo giữa espresso và sữa tươi</p>
+                            <div class="menu-price">55,000đ</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="menu-card">
+                        <div class="menu-image">
+                            <img src="https://images.pexels.com/photos/374885/pexels-photo-374885.jpeg?auto=compress&cs=tinysrgb&w=400"
+                                 alt="Latte" class="img-fluid">
+                        </div>
+                        <div class="menu-content">
+                            <h5>Latte</h5>
+                            <p>Cà phê mềm mại với lớp sữa tươi béo ngậy</p>
+                            <div class="menu-price">60,000đ</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="menu-card">
+                        <div class="menu-image">
+                            <img src="https://images.pexels.com/photos/1417945/pexels-photo-1417945.jpeg?auto=compress&cs=tinysrgb&w=400"
+                                 alt="Americano" class="img-fluid">
+                        </div>
+                        <div class="menu-content">
+                            <h5>Americano</h5>
+                            <p>Espresso pha loãng với nước nóng, vị đậm đà</p>
+                            <div class="menu-price">50,000đ</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="menu-card">
+                        <div class="menu-image">
+                            <img src="https://images.pexels.com/photos/1793037/pexels-photo-1793037.jpeg?auto=compress&cs=tinysrgb&w=400"
+                                 alt="Mocha" class="img-fluid">
+                        </div>
+                        <div class="menu-content">
+                            <h5>Mocha</h5>
+                            <p>Sự kết hợp tuyệt vời giữa cà phê và chocolate</p>
+                            <div class="menu-price">65,000đ</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="menu-card">
+                        <div class="menu-image">
+                            <img src="https://images.pexels.com/photos/2456435/pexels-photo-2456435.jpeg?auto=compress&cs=tinysrgb&w=400"
+                                 alt="Iced Coffee" class="img-fluid">
+                        </div>
+                        <div class="menu-content">
+                            <h5>Iced Coffee</h5>
+                            <p>Cà phê đá mát lạnh, hoàn hảo cho ngày hè</p>
+                            <div class="menu-price">48,000đ</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <div class="about-image">
+                        <img src="https://images.pexels.com/photos/2074130/pexels-photo-2074130.jpeg?auto=compress&cs=tinysrgb&w=600"
+                             alt="Coffee House Interior" class="img-fluid rounded">
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="about-content">
+                        <h2 class="section-title">Câu Chuyện Của Chúng Tôi</h2>
+                        <p class="section-subtitle">Hành trình khởi tạo từ tình yêu cà phê</p>
+                        <p>
+                            Coffee House được thành lập với mong muốn mang đến những trải nghiệm cà phê tuyệt vời nhất
+                            cho khách hàng. Chúng tôi tin rằng mỗi ly cà phê không chỉ là thức uống, mà còn là những
+                            khoảnh khắc đáng nhớ.
+                        </p>
+                        <p>
+                            Với không gian ấm cúng, thoải mái và đội ngũ nhân viên nhiệt tình, chúng tôi tạo ra một nơi
+                            lý tưởng để bạn thư giãn, làm việc hoặc gặp gỡ bạn bè.
+                        </p>
+
+                        <div class="about-stats row mt-4">
+                            <div class="col-4 text-center">
+                                <div class="stat-number">10+</div>
+                                <div class="stat-label">Năm kinh nghiệm</div>
+                            </div>
+                            <div class="col-4 text-center">
+                                <div class="stat-number">1000+</div>
+                                <div class="stat-label">Khách hàng hài lòng</div>
+                            </div>
+                            <div class="col-4 text-center">
+                                <div class="stat-number">20+</div>
+                                <div class="stat-label">Loại cà phê</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section py-5">
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col-lg-6 mx-auto text-center">
+                    <h2 class="section-title">Liên Hệ Với Chúng Tôi</h2>
+                    <p class="section-subtitle">Chúng tôi luôn sẵn sàng phục vụ bạn</p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="contact-card text-center">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <h5>Địa chỉ</h5>
+                        <p>123 Đường Nguyễn Văn A<br>Quận 1, TP.HCM</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="contact-card text-center">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <h5>Điện thoại</h5>
+                        <p>+84 901 234 567<br>+84 901 234 568</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="contact-card text-center">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <h5>Email</h5>
+                        <p>info@coffeehouse.vn<br>order@coffeehouse.vn</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mt-5">
+                <div class="col-lg-8 mx-auto">
+                    <div class="hours-card text-center">
+                        <h4>Giờ Mở Cửa</h4>
+                        <div class="hours-grid">
+                            <div class="hours-item">
+                                <strong>Thứ 2 - Thứ 6:</strong> 7:00 - 22:00
+                            </div>
+                            <div class="hours-item">
+                                <strong>Thứ 7 - Chủ nhật:</strong> 8:00 - 23:00
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-light py-5 mt-5">
+        <div class="container">
+            <div class="row">
+                <!-- Giới thiệu Column -->
+                <div class="col-md-6 col-lg-3 mb-4">
+                    <h4 class="fw-bold text-white mb-4">Giới thiệu</h4>
+                    <ul class="list-unstyled">
+                        <li class="mb-2">
+                            <a href="javascript:void(0)" class="text-light text-decoration-none">
+                                Về
+                                Chúng Tôi
+                            </a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="javascript:void(0)" class="text-light text-decoration-none">
+                                Sản
+                                phẩm
+                            </a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="javascript:void(0)"
+                               class="text-light text-decoration-none">Khuyến mãi</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- Điều khoản Column -->
+                <div class="col-md-6 col-lg-3 mb-4">
+                    <h4 class="fw-bold text-white mb-4">Điều khoản</h4>
+                    <ul class="list-unstyled">
+                        <li class="mb-2">
+                            <a href="javascript:void(0)"
+                               class="text-light text-decoration-none">Điều khoản sử dụng</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="javascript:void(0)"
+                               class="text-light text-decoration-none">
+                                Chính sách bảo mật thông
+                                tin
+                            </a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="javascript:void(0)"
+                               class="text-light text-decoration-none">
+                                Hướng dẫn xuất hóa đơn
+                                GTGT
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- Đặt hàng & Liên hệ Column -->
+                <div class="col-md-6 col-lg-3 mb-4">
+                    <h4 class="fw-bold text-white mb-4">
+                        <span class="me-2">Đặt hàng:</span>
+                        <a href="tel:18009999" class="text-warning text-decoration-none">1800 9999</a>
+                    </h4>
+                    <h4 class="fw-bold text-white mb-4">Liên hệ</h4>
+                    <ul class="list-unstyled">
+                        <li>
+                            <p class="small">140 Lê Trọng Tấn, Phường Tây Thạnh, Quận Tân Phú, TP.HCM</p>
+                        </li>
+                        <li class="mt-3">
+                            <div class="d-flex gap-3">
+                                <a href="javascript:void(0)"
+                                   class="text-light text-decoration-none">
+                                    <i class="fab fa-facebook-f fs-5"></i>
+                                </a>
+                                <a href="javascript:void(0)"
+                                   class="text-light text-decoration-none">
+                                    <i class="fab fa-instagram fs-5"></i>
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <!-- Hình ảnh và bản quyền Column -->
+                <div class="col-md-6 col-lg-3 mb-4">
+                    <div class="map-container" style="height: 200px; overflow: hidden;">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31352.804492545703!2d106.6237952!3d10.8036096!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752be27d8b4f4d%3A0x92dcba2950430867!2zVHLGsOG7nW5nIMSQ4bqhaSBo4buNYyBDw7RuZyBUaMawxqFuZyBUUC4gSOG7kyBDaMOtIE1pbmggKEhVSVQp!5e0!3m2!1svi!2s!4v1759064845059!5m2!1svi!2s"
+                                width="600"
+                                height="300"
+                                style="border:0;"
+                                allowfullscreen=""
+                                loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                    <p class="small">
+                        Công ty cổ phần thương mại dịch vụ Trà Cà Phê VN<br />
+                        Mã số ĐKKD: 0312671172 do sở kế hoạch và đầu tư TP. HCM cấp ngày 23/07/2014. Người đại diện: NGÔ
+                        NGUYỄN KHA<br />
+                        Địa chỉ: 263 Lê Trọng Tấn, Phường Tây Thạnh, Quận Tân Phú, Tp Hồ Chí Minh. Điện thoại: (028)
+                        7107 8079. Email: the@escoffier.vn<br />
+                        &copy; 2014-2022 Công ty cổ phần thương mại dịch vụ Trà Cà Phê VN mọi quyền bảo lưu
+                    </p>
+                </div>
+            </div>
+        </div>
+        <button class="position-fixed bottom-0 end-0 m-4 bg-warning text-white p-3 rounded-circle border-0 shadow"
+                onclick="showMessage('Bạn đã chọn biểu tượng hỗ trợ khách hàng');">
+            <img src="https://file.hstatic.net/1000075078/file/customer-service-line_2x_e5acb85c9abd40a2a95f2bf1f7253f05.png"
+                 alt="Customer Service Icon" width="24" height="24">
+        </button>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./js/auth.js"></script>
+    <script>
+        // Cart functionality
+        const CART_KEY = 'cartItems';
+
+        function getCartItems() {
+            try {
+                const raw = localStorage.getItem(CART_KEY);
+                return raw ? JSON.parse(raw) : [];
+            } catch (e) {
+                console.error('Lỗi parse cartItems', e);
+                return [];
+            }
+        }
+
+        function calcCartCount(items) {
+            if (!Array.isArray(items)) return 0;
+            return items.reduce((sum, it) => sum + (Number(it.quantity) || 1), 0);
+        }
+
+        function updateCartBadge() {
+            const el = document.getElementById('cart-count');
+            if (!el) return;
+            const items = getCartItems();
+            const count = calcCartCount(items);
+            el.textContent = count;
+            if (count <= 0) {
+                el.style.display = 'none';
+            } else {
+                el.style.display = 'block';
+            }
+        }
+
+        function openCartModal() {
+            window.location.href = 'cart.html';
+        }
+
+        function showMessage(message) {
+            alert(message);
+        }
+
+        // Initialize on page load
+        window.addEventListener('DOMContentLoaded', () => {
+            updateCartBadge();
+            updateUserInterface();
+        });
+
+        // Listen for auth changes
+        window.addEventListener('storage', (e) => {
+            if (e.key === CART_KEY) {
+                updateCartBadge();
+            }
+            if (e.key === 'isLoggedIn' || e.key === 'loggedInUser') {
+                updateUserInterface();
+            }
+        });
+
+        window.addEventListener('auth-changed', () => {
+            updateUserInterface();
+        });
+    </script>
+</body>
+
+</html>

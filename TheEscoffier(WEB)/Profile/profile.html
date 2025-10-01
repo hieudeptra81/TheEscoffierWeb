@@ -1,0 +1,718 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hồ Sơ Cá Nhân - The Escoffier</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --coffee-brown: #6f4e37;
+            --coffee-light: #8b5a42;
+            --amber: #f59e0b;
+            --amber-dark: #d97706;
+            --cream: #f8f6f3;
+            --text-dark: #2d2d2d;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: linear-gradient(135deg, var(--cream) 0%, #ffffff 100%);
+            min-height: 100vh;
+            color: var(--text-dark);
+        }
+
+        /* Header Styles */
+        .header {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+            border-bottom: 1px solid rgba(111, 78, 55, 0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .brand {
+            color: var(--coffee-brown);
+            font-weight: 700;
+            font-size: 1.5rem;
+            text-decoration: none;
+            letter-spacing: 0.5px;
+            transition: color 0.3s ease;
+        }
+
+        .brand:hover {
+            color: var(--amber);
+        }
+
+        .nav-link {
+            color: var(--coffee-brown) !important;
+            font-weight: 500;
+            padding: 0.5rem 1rem;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+        }
+
+        .nav-link:hover {
+            background-color: var(--amber);
+            color: white !important;
+            transform: translateY(-2px);
+        }
+
+        /* Profile Container */
+        .profile-container {
+            max-width: 1000px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+
+        .profile-header {
+            background: linear-gradient(135deg, var(--coffee-brown) 0%, var(--coffee-light) 100%);
+            color: white;
+            border-radius: 20px 20px 0 0;
+            padding: 2rem;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .profile-header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('https://images.pexels.com/photos/1002740/pexels-photo-1002740.jpeg') center/cover;
+            opacity: 0.1;
+            z-index: 0;
+        }
+
+        .profile-header > * {
+            position: relative;
+            z-index: 1;
+        }
+
+        .avatar-container {
+            position: relative;
+            display: inline-block;
+            margin-bottom: 1rem;
+        }
+
+        .avatar {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            border: 4px solid rgba(255, 255, 255, 0.3);
+            background: rgba(255, 255, 255, 0.1);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 3rem;
+            color: white;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+        }
+
+        .profile-name {
+            font-size: 2rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        .profile-email {
+            font-size: 1.1rem;
+            opacity: 0.9;
+            margin-bottom: 1rem;
+        }
+
+        .logout-btn {
+            background: rgba(255, 255, 255, 0.2);
+            border: 2px solid rgba(255, 255, 255, 0.3);
+            color: white;
+            padding: 0.5rem 1.5rem;
+            border-radius: 25px;
+            transition: all 0.3s ease;
+            backdrop-filter: blur(10px);
+        }
+
+        .logout-btn:hover {
+            background: rgba(255, 255, 255, 0.3);
+            border-color: rgba(255, 255, 255, 0.5);
+            color: white;
+            transform: translateY(-2px);
+        }
+
+        /* Profile Content */
+        .profile-content {
+            background: white;
+            border-radius: 0 0 20px 20px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+
+        .profile-tabs {
+            background: #f8f9fa;
+            padding: 0;
+            border-bottom: 1px solid #e9ecef;
+        }
+
+        .profile-tabs .nav-link {
+            border: none;
+            padding: 1rem 2rem;
+            font-weight: 600;
+            color: var(--text-dark);
+            border-radius: 0;
+            position: relative;
+        }
+
+        .profile-tabs .nav-link.active {
+            background: white;
+            color: var(--coffee-brown);
+            border-bottom: 3px solid var(--coffee-brown);
+        }
+
+        .profile-form {
+            padding: 2rem;
+        }
+
+        .form-section {
+            margin-bottom: 2rem;
+        }
+
+        .form-section h4 {
+            color: var(--coffee-brown);
+            font-weight: 600;
+            margin-bottom: 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid var(--amber);
+            display: inline-block;
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        .form-label {
+            font-weight: 600;
+            color: var(--text-dark);
+            margin-bottom: 0.5rem;
+        }
+
+        .form-control {
+            border: 2px solid #e9ecef;
+            border-radius: 12px;
+            padding: 0.75rem 1rem;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+            background: #f8f9fa;
+        }
+
+        .form-control:focus {
+            border-color: var(--coffee-brown);
+            box-shadow: 0 0 0 0.2rem rgba(111, 78, 55, 0.25);
+            background: white;
+        }
+
+        .btn-save {
+            background: linear-gradient(135deg, var(--coffee-brown) 0%, var(--coffee-light) 100%);
+            border: none;
+            padding: 0.75rem 2rem;
+            border-radius: 25px;
+            font-weight: 600;
+            color: white;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(111, 78, 55, 0.3);
+        }
+
+        .btn-save:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(111, 78, 55, 0.4);
+            color: white;
+        }
+
+        .btn-cancel {
+            background: transparent;
+            border: 2px solid #6c757d;
+            color: #6c757d;
+            padding: 0.75rem 2rem;
+            border-radius: 25px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+
+        .btn-cancel:hover {
+            background: #6c757d;
+            color: white;
+            transform: translateY(-2px);
+        }
+
+        /* Stats Cards */
+        .stats-container {
+            padding: 2rem;
+            background: #f8f9fa;
+        }
+
+        .stat-card {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+            transition: transform 0.3s ease;
+            border: 1px solid #e9ecef;
+        }
+
+        .stat-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .stat-icon {
+            width: 60px;
+            height: 60px;
+            background: linear-gradient(135deg, var(--amber) 0%, var(--amber-dark) 100%);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 1rem;
+            font-size: 1.5rem;
+            color: white;
+        }
+
+        .stat-number {
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--coffee-brown);
+            margin-bottom: 0.5rem;
+        }
+
+        .stat-label {
+            color: #6c757d;
+            font-weight: 500;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .profile-container {
+                margin: 1rem auto;
+                padding: 0 0.5rem;
+            }
+            
+            .profile-header {
+                padding: 1.5rem;
+            }
+            
+            .profile-name {
+                font-size: 1.5rem;
+            }
+            
+            .profile-form {
+                padding: 1rem;
+            }
+            
+            .profile-tabs .nav-link {
+                padding: 0.75rem 1rem;
+                font-size: 0.9rem;
+            }
+        }
+
+        /* Loading Spinner */
+        .spinner {
+            border: 4px solid #f3f3f3;
+            border-top: 4px solid var(--coffee-brown);
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            animation: spin 2s linear infinite;
+            margin: 20px auto;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg">
+                <a class="brand" href="index.html">
+                    <i class="fas fa-coffee me-2"></i>
+                    THE ESCOFFIER
+                </a>
+                
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">
+                                <i class="fas fa-home me-1"></i>Trang chủ
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="profile.html">
+                                <i class="fas fa-user me-1"></i>Hồ sơ
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Profile Container -->
+    <div class="profile-container">
+        <!-- Profile Header -->
+        <div class="profile-header">
+            <div class="avatar-container">
+                <div class="avatar" id="userAvatar">
+                    <i class="fas fa-user"></i>
+                </div>
+            </div>
+            <h1 class="profile-name" id="userName">Tên người dùng</h1>
+            <p class="profile-email" id="userEmail">email@example.com</p>
+            <button class="btn logout-btn" onclick="logout()">
+                <i class="fas fa-sign-out-alt me-2"></i>Đăng xuất
+            </button>
+        </div>
+
+        <!-- Profile Content -->
+        <div class="profile-content">
+            <!-- Navigation Tabs -->
+            <ul class="nav nav-tabs profile-tabs" role="tablist">
+                <li class="nav-item">
+                    <a class="nav-link active" data-bs-toggle="tab" href="#info-tab">
+                        <i class="fas fa-info-circle me-2"></i>Thông tin cá nhân
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-bs-toggle="tab" href="#stats-tab">
+                        <i class="fas fa-chart-bar me-2"></i>Thống kê
+                    </a>
+                </li>
+            </ul>
+
+            <!-- Tab Content -->
+            <div class="tab-content">
+                <!-- Personal Info Tab -->
+                <div class="tab-pane fade show active" id="info-tab">
+                    <form class="profile-form" id="profileForm">
+                        <div class="form-section">
+                            <h4>Thông tin cơ bản</h4>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label class="form-label">Họ và tên</label>
+                                        <input type="text" class="form-control" id="fullName" required>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label class="form-label">Email</label>
+                                        <input type="email" class="form-control" id="email" required>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label class="form-label">Số điện thoại</label>
+                                        <input type="tel" class="form-control" id="phone">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label class="form-label">Ngày sinh</label>
+                                        <input type="date" class="form-control" id="birthDate">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-section">
+                            <h4>Địa chỉ</h4>
+                            <div class="row">
+                                <div class="col-md-8">
+                                    <div class="form-group">
+                                        <label class="form-label">Địa chỉ</label>
+                                        <input type="text" class="form-control" id="address" placeholder="Số nhà, tên đường">
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label class="form-label">Thành phố</label>
+                                        <input type="text" class="form-control" id="city" placeholder="TP.HCM">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-section">
+                            <h4>Tùy chọn</h4>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label class="form-label">Loại cà phê yêu thích</label>
+                                        <select class="form-control" id="favoriteCoffee">
+                                            <option value="">Chọn loại cà phê</option>
+                                            <option value="espresso">Espresso</option>
+                                            <option value="cappuccino">Cappuccino</option>
+                                            <option value="latte">Latte</option>
+                                            <option value="americano">Americano</option>
+                                            <option value="mocha">Mocha</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <div class="form-check mt-4">
+                                            <input type="checkbox" class="form-check-input" id="newsletter">
+                                            <label class="form-check-label" for="newsletter">
+                                                Nhận thông tin khuyến mãi qua email
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="text-end">
+                            <button type="button" class="btn btn-cancel me-3" onclick="resetForm()">Hủy</button>
+                            <button type="submit" class="btn btn-save">
+                                <i class="fas fa-save me-2"></i>Lưu thay đổi
+                            </button>
+                        </div>
+                    </form>
+                </div>
+
+                <!-- Stats Tab -->
+                <div class="tab-pane fade" id="stats-tab">
+                    <div class="stats-container">
+                        <div class="row">
+                            <div class="col-md-3 mb-4">
+                                <div class="stat-card">
+                                    <div class="stat-icon">
+                                        <i class="fas fa-coffee"></i>
+                                    </div>
+                                    <div class="stat-number" id="totalOrders">12</div>
+                                    <div class="stat-label">Đơn hàng</div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 mb-4">
+                                <div class="stat-card">
+                                    <div class="stat-icon">
+                                        <i class="fas fa-heart"></i>
+                                    </div>
+                                    <div class="stat-number" id="favoriteItems">8</div>
+                                    <div class="stat-label">Yêu thích</div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 mb-4">
+                                <div class="stat-card">
+                                    <div class="stat-icon">
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                    <div class="stat-number" id="loyaltyPoints">150</div>
+                                    <div class="stat-label">Điểm tích lũy</div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 mb-4">
+                                <div class="stat-card">
+                                    <div class="stat-icon">
+                                        <i class="fas fa-calendar"></i>
+                                    </div>
+                                    <div class="stat-number" id="memberSince">2024</div>
+                                    <div class="stat-label">Thành viên từ</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Check authentication on page load
+        document.addEventListener('DOMContentLoaded', function() {
+            checkAuthentication();
+            loadUserData();
+            loadUserStats();
+        });
+
+        function checkAuthentication() {
+            const isLoggedIn = localStorage.getItem('isLoggedIn');
+            if (!isLoggedIn || isLoggedIn !== 'true') {
+                alert('Vui lòng đăng nhập để truy cập trang này!');
+                window.location.href = 'DangNhap.html';
+                return;
+            }
+        }
+
+        function loadUserData() {
+            try {
+                const userData = JSON.parse(localStorage.getItem('user') || '{}');
+                const profileData = JSON.parse(localStorage.getItem('userProfile') || '{}');
+                
+                // Display user basic info
+                document.getElementById('userName').textContent = userData.fullName || 'Tên người dùng';
+                document.getElementById('userEmail').textContent = userData.email || 'email@example.com';
+                
+                // Update avatar with first letter of name
+                const firstName = (userData.fullName || 'U').charAt(0).toUpperCase();
+                document.getElementById('userAvatar').innerHTML = firstName;
+                
+                // Fill form with saved data
+                document.getElementById('fullName').value = userData.fullName || '';
+                document.getElementById('email').value = userData.email || '';
+                document.getElementById('phone').value = profileData.phone || '';
+                document.getElementById('birthDate').value = profileData.birthDate || '';
+                document.getElementById('address').value = profileData.address || '';
+                document.getElementById('city').value = profileData.city || '';
+                document.getElementById('favoriteCoffee').value = profileData.favoriteCoffee || '';
+                document.getElementById('newsletter').checked = profileData.newsletter || false;
+                
+            } catch (error) {
+                console.error('Error loading user data:', error);
+            }
+        }
+
+        function loadUserStats() {
+            // Load stats from localStorage or set defaults
+            const stats = JSON.parse(localStorage.getItem('userStats') || '{}');
+            
+            document.getElementById('totalOrders').textContent = stats.totalOrders || Math.floor(Math.random() * 20) + 5;
+            document.getElementById('favoriteItems').textContent = stats.favoriteItems || Math.floor(Math.random() * 10) + 3;
+            document.getElementById('loyaltyPoints').textContent = stats.loyaltyPoints || Math.floor(Math.random() * 200) + 50;
+            
+            const currentYear = new Date().getFullYear();
+            document.getElementById('memberSince').textContent = stats.memberSince || currentYear;
+        }
+
+        // Handle form submission
+        document.getElementById('profileForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const formData = {
+                phone: document.getElementById('phone').value,
+                birthDate: document.getElementById('birthDate').value,
+                address: document.getElementById('address').value,
+                city: document.getElementById('city').value,
+                favoriteCoffee: document.getElementById('favoriteCoffee').value,
+                newsletter: document.getElementById('newsletter').checked
+            };
+            
+            // Update user basic info
+            const userData = JSON.parse(localStorage.getItem('user') || '{}');
+            userData.fullName = document.getElementById('fullName').value;
+            userData.email = document.getElementById('email').value;
+            
+            try {
+                localStorage.setItem('user', JSON.stringify(userData));
+                localStorage.setItem('userProfile', JSON.stringify(formData));
+                localStorage.setItem('loggedInUser', userData.fullName);
+                
+                // Show success message
+                showNotification('Thông tin đã được cập nhật thành công!', 'success');
+                
+                // Reload data to reflect changes
+                loadUserData();
+                
+            } catch (error) {
+                console.error('Error saving data:', error);
+                showNotification('Có lỗi xảy ra khi lưu thông tin!', 'error');
+            }
+        });
+
+        function resetForm() {
+            if (confirm('Bạn có chắc muốn hủy các thay đổi?')) {
+                loadUserData();
+                showNotification('Đã khôi phục thông tin ban đầu!', 'info');
+            }
+        }
+
+        function logout() {
+            if (confirm('Bạn có chắc muốn đăng xuất?')) {
+                localStorage.removeItem('isLoggedIn');
+                localStorage.removeItem('loggedInUser');
+                showNotification('Đã đăng xuất thành công!', 'success');
+                setTimeout(() => {
+                    window.location.href = 'index.html';
+                }, 1000);
+            }
+        }
+
+        function showNotification(message, type = 'info') {
+            // Create notification element
+            const notification = document.createElement('div');
+            notification.className = `alert alert-${type === 'success' ? 'success' : type === 'error' ? 'danger' : 'info'} alert-dismissible fade show position-fixed`;
+            notification.style.cssText = 'top: 20px; right: 20px; z-index: 9999; min-width: 300px;';
+            notification.innerHTML = `
+                ${message}
+                <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+            `;
+            
+            document.body.appendChild(notification);
+            
+            // Auto remove after 3 seconds
+            setTimeout(() => {
+                if (notification.parentNode) {
+                    notification.remove();
+                }
+            }, 3000);
+        }
+
+        // Form validation
+        function validateForm() {
+            const required = document.querySelectorAll('[required]');
+            let isValid = true;
+            
+            required.forEach(field => {
+                if (!field.value.trim()) {
+                    field.classList.add('is-invalid');
+                    isValid = false;
+                } else {
+                    field.classList.remove('is-invalid');
+                }
+            });
+            
+            return isValid;
+        }
+
+        // Real-time form validation
+        document.querySelectorAll('.form-control').forEach(input => {
+            input.addEventListener('blur', function() {
+                if (this.hasAttribute('required')) {
+                    if (!this.value.trim()) {
+                        this.classList.add('is-invalid');
+                    } else {
+                        this.classList.remove('is-invalid');
+                    }
+                }
+            });
+        });
+    </script>
+</body>
+</html>
